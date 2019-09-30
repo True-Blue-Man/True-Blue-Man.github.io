@@ -1,0 +1,267 @@
+body,
+html {
+	height: 100%;
+	margin: 0;
+	font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+	background-color: black;
+	color: white;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	font-size: 17px;
+	width: 20%;
+}
+
+.tablink:hover {
+	background-color: black;
+	border-bottom: 6px solid aqua;
+	transition: 0.5s;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+	color: white;
+	display: none;
+	padding: 75px 20px;
+	height: 100%;
+}
+
+#Twitter {
+	background-color: rgb(0, 132, 255);
+}
+#Discord {
+	background-color: rgb(0, 132, 255);
+}
+#SoundCloud {
+	background-color: rgb(0, 132, 255);
+}
+#YouTube {
+	background-color: rgb(0, 132, 255);
+}
+#Contact {
+	background-color: rgb(0, 132, 255);
+}
+
+#footer {
+	background-color: black;
+	border-top: 6px solid aqua;
+}
+
+.btn-home .button {
+	background-color: rgb(0, 132, 255);
+	border: none;
+	color: aqua;
+	text-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+	padding: 8px 16px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	float: left;
+	-webkit-animation-name: fade; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+}
+
+.btn-home .button:hover {
+	background-color: aqua;
+	color: blue;
+	cursor: pointer;
+}
+.ml3 {
+	font-weight: 900;
+	font-size: 100px;
+	position: absolute;
+	top: 67.5%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+h1 {
+	color: white;
+	text-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+}
+.text {
+	position: relative;
+	text-shadow: 4px 4px 8px wheat 0 0 25px white 0 0 5px aqua;
+	-webkit-animation-name: fade; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+}
+@keyframes example {
+	0% {
+		opacity: 0;
+		top: 100%;
+		left: 50%;
+		transform: translate(-50%, 0%);
+	}
+	100% {
+		opacity: 1;
+		top: 67.5%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+h2 {
+	color: white;
+	text-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+	position: relative;
+	-webkit-animation-name: fade; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+}
+
+.line {
+	border-bottom: 6px solid aqua;
+	-webkit-animation-name: fade; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+}
+
+h3 {
+	color: white;
+	text-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+	position: relative;
+	-webkit-animation-name: fade; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+}
+
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.container {
+	position: relative;
+	color: white;
+}
+
+/* Style the navbar */
+#navbar {
+	overflow: hidden;
+	background-color: #333;
+	border-bottom: 6px solid aqua;
+}
+
+/* Navbar links */
+#navbar p 
+{
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+	float: right;
+}
+#navbar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+	float: right;
+}
+
+#navbar a:hover {
+	/*	background-color: #ddd;*/
+	color: black;
+	box-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+	transition: 0.5s;
+}
+
+#navbar a.active {
+	background-color: skyblue;
+	color: rgb(0, 132, 255);
+	float: left;
+}
+
+#navbar a.active:hover {
+	background-color: rgb(0, 132, 255);
+	color: skyblue;
+	box-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+	transition: 0.5s;
+}
+
+/* Page content */
+.content {
+	padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+	padding-top: 60px;
+}
+
+/* The side navigation menu */
+.sidenav {
+	height: 100%; /* 100% Full-height */
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Stay on top */
+	top: 0;
+	left: 0;
+	background-color: #111; /* Black*/
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 60px; /* Place content 60px from the top */
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+	color: skyblue;
+	text-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+	box-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 16px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+	transition: margin-left 0.5s;
+	background-color: black;
+	padding: 0;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 0;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
+}
