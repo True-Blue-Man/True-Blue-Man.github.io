@@ -1,0 +1,779 @@
+body,
+html {
+	height: 100%; /* Used to enable scrolling */
+	margin: 0;
+	font-family: Verdana;
+	background-image: linear-gradient(45deg, #222, #333, #444);
+}
+* {
+	/*box-sizing: border-box;*/
+	transition: 0.5s;
+}
+
+ul li {
+	box-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+	position: absolute;
+	list-style: none;
+	width: 4px;
+	height: 4px;
+	border-radius: 100%;
+}
+
+.Particles li {
+	bottom: 0;
+	animation: Particles 2s linear infinite;
+}
+.Particles li:nth-child(2) {
+	animation-delay: 1s;
+	left: 10%;
+}
+.Particles li:nth-child(3) {
+	animation-delay: 2s;
+	left: 20%;
+}
+.Particles li:nth-child(4) {
+	animation-delay: 1.5s;
+	left: 30%;
+}
+.Particles li:nth-child(5) {
+	animation-delay: 2.5s;
+	left: 40%;
+}
+.Particles li:nth-child(6) {
+	animation-delay: 1.75s;
+	left: 50%;
+}
+.Particles li:nth-child(7) {
+	animation-delay: 2.25s;
+	left: 60%;
+}
+.Particles li:nth-child(8) {
+	animation-delay: 1.25s;
+	left: 70%;
+}
+.Particles li:nth-child(9) {
+	animation-delay: 3s;
+	left: 80%;
+}
+.Particles li:nth-child(10) {
+	animation-delay: 2.125s;
+	left: 90%;
+}
+.Welcome {
+	text-align: left;
+	height: 100%;
+	animation-name: FadeIn;
+	animation-duration: 4s;
+	-webkit-animation-name: FadeIn; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+	font-size: 4vmax;
+	margin: 0%;
+	overflow: hidden;
+	display: table;
+}
+.Welcome h1 {
+	z-index: 1;
+	position: relative;
+	top: 0%;
+	padding: 0%;
+	margin-bottom: -1%;
+	margin: 0px;
+}
+.Welcome p {
+	z-index: 1;
+	position: relative;
+	margin-bottom: 0%;
+}
+.Welcome .bar::before {
+	content: " ";
+    z-index: 1;
+    top: -2px;
+    bottom: -2px;
+    left:-2px;
+    right:-2px;
+	box-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+	background-image: linear-gradient(
+		45deg,
+		rgb(255, 0, 255, 0.25),
+		rgb(0, 0, 255, 1),
+		#00ffffbf
+    );
+    display: grid;
+    transform: skew(2deg,2deg);
+}
+.Welcome .bar {
+	z-index: 2;
+	background-image: linear-gradient(90deg, #111, #333, #444);
+	box-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    padding: 0%;
+    margin: 16px;
+    display: grid;
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.Welcome .NavBar:before {
+	content: " ";
+	box-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+	background-image: linear-gradient(
+		45deg,
+		rgb(255, 0, 255, 0.25),
+		rgb(0, 0, 255, 1),
+		#00ffffbf
+	);
+	
+}
+.Welcome .NavBar{
+    padding: 4px;
+    border-bottom-right-radius: 32px;
+	background-image: linear-gradient(90deg, #111, #333, #444);
+	box-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+	margin: 0px;
+    display: table;
+    overflow: hidden;
+}
+.Welcome a {
+	margin: 0px;
+	z-index: 1;
+    position: relative;
+    justify-items: center;
+    align-items: center;
+	text-decoration: none;
+	font-size: 0vw;
+	border-top: 2px solid aqua;
+	color: #818181;
+	transition: 0.3s;
+	border-radius: 28vmax;
+	display: inline-flex;
+}
+.Welcome a:hover {
+	font-size: 2vw;
+	animation: Pulse 2.5s linear infinite;
+}
+
+.Welcome button {
+    background: linear-gradient(45deg, rgb(255, 0, 255, 0.25), rgb(0, 0, 255, 1), #00ffffbf);
+	border: 2px solid radial;
+	padding: 14px 16px;
+	position: absolute;
+	font-size: 2vw;
+	right: 2vw;
+	top: 2vh;
+	text-decoration: none;
+	color: #818181;
+	border-radius: 28vmax;
+	outline: none;
+}
+.Welcome button:hover {
+	animation: Pulse 2.5s linear infinite;
+	border-radius: 28vw;
+	cursor: pointer;
+}
+.Welcome .Img {
+	position: absolute;
+	float: right;
+	top: 12.5%;
+	right: 0;
+	width: 25vmax;
+	animation: WelcomeIMG 5s linear infinite;
+}
+.Welcome .BG {
+	z-index: 0;
+	position: absolute;
+	opacity: 0.5;
+	width: 100%;
+	height: 100%;
+}
+
+.TitleCard {
+	box-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+	width: 100%;
+}
+.TitleText {
+	font-size: 3vw;
+}
+.TitleCard li {
+	color: white;
+	box-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+	text-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+	position: relative;
+	font-weight: 450;
+	font-size: 3vw;
+	border-radius: 28px;
+}
+.TitleImg {
+	border-radius: 100%;
+	padding: 24px;
+	width: 75%;
+	height: 75%;
+	overflow: visible;
+}
+/* Create two equal columns that floats next to each other */
+.column {
+	float: left;
+	width: 50%;
+	padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 4; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+	animation-name: FadeIn;
+	animation-duration: 1s;
+	-webkit-animation-name: FadeIn; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+}
+.modal a {
+	background-color: #333;
+	overflow: auto;
+	position: relative;
+	color: white;
+	text-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+	padding: 14px 16px;
+	transition: 0.4s;
+	outline: none;
+	border: 14px;
+	font-weight: 450;
+	font-size: 4vw;
+	height: 100%;
+	animation-name: FadeIn;
+	animation-duration: 4s;
+	-webkit-animation-name: FadeIn; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+}
+.modal a:hover {
+	border-radius: 28px;
+	transition: 0.4s;
+	box-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+}
+/* Modal Content/Box */
+.modal-content {
+	background-color: #333;
+	margin: 15% auto; /* 15% from the top and centeviolet */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+	box-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+	border-radius: 28px;
+	animation-name: FadeIn;
+	animation-duration: 1s;
+	-webkit-animation-name: FadeIn; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+}
+
+/* The Close Button */
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	border-radius: 28px;
+	text-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+	box-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+	color: black;
+	transition: 0.4s;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/**/
+.ss {
+	background-color: black;
+	z-index: 4;
+	top: 0;
+	position: fixed;
+	width: 0%;
+	height: 0%;
+	opacity: 0%;
+}
+
+.Startscreen {
+	background-color: black;
+	z-index: 4;
+	top: 0;
+	position: fixed;
+	width: 0%;
+	height: 0%;
+	opacity: 0%;
+	animation-name: StartUpBody;
+	animation-duration: 5s;
+	-webkit-animation-name: StartUpBody; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+}
+
+.Startscreen p {
+	position: relative;
+	font-size: 5vmax;
+	animation-name: StartUpFontP;
+	animation-duration: 5s;
+	-webkit-animation-name: StartUpFontP; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+}
+.Startscreen h2 {
+	position: relative;
+	font-size: 10vmax;
+	animation-name: StartUpFontH2;
+	animation-duration: 5s;
+	-webkit-animation-name: StartUpFontH2; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+}
+/*Custom Scroll Elements*/
+::-webkit-scrollbar {
+	background: #111;
+	width: 10px;
+	height: 10px;
+	top: 0%;
+	right: 0%;
+	box-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+	border-radius: 28px;
+	position: fixed;
+	margin-left: 10px;
+}
+::-webkit-scrollbar-track {
+	background: #111;
+	box-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+}
+::-webkit-scrollbar-thumb {
+	background: #333;
+	top: 0%;
+	right: 0%;
+	margin-left: 10px;
+	position: fixed;
+	-webkit-transition: 1s;
+	transition: 1s;
+	border-radius: 28px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #444;
+	box-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+
+	mix-blend-mode: overlay;
+	-webkit-transition: 1s;
+	transition: 1s;
+}
+/*Extendable Pages*/
+.accordion {
+	float: right;
+	background-color: #111;
+	color: #444;
+	text-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+	font-weight: 225;
+	width: 100%;
+	font-size: 8vw;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.5s;
+	animation-name: FadeIn;
+	animation-duration: 4s;
+	-webkit-animation-name: FadeIn; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+}
+.active,
+.accordion:hover {
+	float: right;
+	/*background-color: #444;
+	backface-visibility: inherit;*/
+	border-radius: 20px;
+	box-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+}
+.panel {
+	border-radius: 28px;
+	background-color: #111;
+	box-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+	max-height: 0vh;
+	padding: 0 18px;
+	overflow: auto;
+	transition: max-height 0.5s ease-in-out;
+	/*opacity: 0.5;*/
+}
+.accordion:after {
+	content: "\21E9";
+	color: #777;
+	font-size: 24px;
+	font-weight: 225;
+	margin-left: 25px;
+	margin-top: -50px;
+	text-align: right;
+	float: right;
+	transition: 0.5s;
+	animation-name: FadeIn;
+	animation-duration: 4s;
+	-webkit-animation-name: FadeIn; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+}
+
+.active:after {
+	content: "\21EB";
+	padding: 18px;
+	float: right;
+	text-align: right;
+	animation-name: FadeIn;
+	animation-duration: 4s;
+	-webkit-animation-name: FadeIn; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+}
+
+.livechat {
+	z-index: 2;
+	position: fixed;
+	top: 32px;
+	right: 32px;
+	background-color: aqua;
+	cursor: pointer;
+	padding: 0px 0px;
+	border: none;
+	outline: none;
+	font-size: 0px;
+	font-display: none;
+	overflow: inherit;
+	width: 64px;
+	height: 64px;
+	opacity: 1;
+	transition: 0.4s;
+	border-radius: 100%;
+	animation-name: FadeIn;
+	animation-duration: 4s;
+	-webkit-animation-name: FadeIn; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+}
+.A,
+.livechat:hover {
+	top: 32px;
+	right: 32px;
+	background-color: #444;
+	text-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+	color: whitesmoke;
+	padding-bottom: 12px;
+	font-weight: 225;
+	font-size: 300%;
+	text-align: right;
+	width: 400px;
+	max-width: 100%;
+	max-height: 100%;
+	margin-left: 100px;
+	transition: 0.4s;
+	border-bottom: 6px solid aqua;
+	border-radius: 28px;
+}
+.openchat {
+	z-index: 2;
+	position: fixed;
+	top: 97px;
+	right: 32px;
+	padding: 0 0px;
+	max-width: auto;
+	max-height: 0px;
+	/*width: 100%;*/
+	overflow: hidden;
+	transition: max-height 0.5s ease-in-out;
+	box-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+	border-radius: 20px;
+}
+
+#footer {
+	position: relative;
+	bottom: 0%;
+	background-color: black;
+	border-top: 6px solid aqua;
+	box-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+}
+.ml3 {
+	font-weight: 900;
+	font-size: 8vw;
+	position: absolute;
+	top: 67.5%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation-name: SlideUp;
+	animation-duration: 4s;
+	-webkit-animation-name: SlideUp; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+}
+h1 {
+	color: whitesmoke;
+	text-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+}
+p {
+	overflow: auto;
+	color: whitesmoke;
+	text-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+	font-weight: 225;
+	width: 100%;
+	font-size: 2vw;
+	animation-name: FadeIn;
+	animation-duration: 4s;
+	-webkit-animation-name: FadeIn; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+}
+h2 {
+	overflow: auto;
+	color: white;
+	text-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+	position: relative;
+	width: 100%;
+	animation-name: FadeIn;
+	animation-duration: 4s;
+	-webkit-animation-name: FadeIn; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+	font-weight: 450;
+	font-size: 4vw;
+}
+*button {
+	background-color: #111;
+	position: relative;
+	color: white;
+	text-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+	display: table;
+	padding: 14px 16px;
+	transition: 0.4s;
+	outline: none;
+	border: none;
+}
+*button:hover {
+	cursor: pointer;
+	border-radius: 28vw;
+	transition: 0.4s;
+	box-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+}
+*button::after {
+	clear: both;
+}
+.line {
+	border-bottom: 6px solid aqua;
+	animation-name: FadeIn;
+	animation-duration: 4s;
+	-webkit-animation-name: FadeIn; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+}
+
+h3 {
+	color: white;
+	text-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+	position: relative;
+	animation-name: FadeIn;
+	animation-duration: 4s;
+	-webkit-animation-name: FadeIn; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+	font-weight: 450;
+	font-size: 3vw;
+}
+.container {
+	height: 100%;
+	position: relative;
+	color: black;
+}
+
+img {
+	position: center;
+}
+/* Style the navbar */
+#navbar {
+	z-index: 1;
+	overflow: hidden;
+	background-color: #333;
+	border-bottom: 6px solid aqua;
+	box-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+	transition: 0.5s;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 0;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	h1 {
+		padding: 0;
+		font-weight: bold;
+		font-size: 48px;
+		transition: 0.4s;
+	}
+	h2{
+        padding: 0;
+		font-weight: 200;
+		font-size: 24px;
+		transition: 0.4s;
+    }
+	h3{
+        padding: 0;
+		font-weight: 200;
+		font-size: 24px;
+		transition: 0.4s;
+    }
+	p{
+        padding: 0;
+		font-weight: 200;
+		font-size: 24px;
+		transition: 0.4s;
+    }
+	li{
+        padding: 0;
+		font-weight: 200;
+		font-size: 24px;
+		transition: 0.4s;
+    }
+	.Welcome a:hover{
+        padding: 0;
+		font-weight: bold;
+		font-size: 12px;
+		transition: 0.4s;
+    }
+	button{
+        padding: 0;
+		font-weight: 200;
+		font-size: 24px;
+		transition: 0.4s;
+    }
+	.tablink{
+        padding: 0;
+		font-weight: 200;
+		font-size: 24px;
+		transition: 0.4s;
+    }
+	.active {
+		padding: 0;
+		font-weight: 200;
+		font-size: 24px;
+		transition: 0.4s;
+	}
+}
+/*Animations*/
+@keyframes SlideUp {
+	0% {
+		opacity: 0;
+		top: 100%;
+		left: 50%;
+		transform: translate(-50%, 0%);
+	}
+	100% {
+		opacity: 1;
+		top: 67.5%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+@keyframes FadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes StartUpBody {
+	0% {
+		opacity: 0;
+		width: 0%;
+		height: 0%;
+	}
+	10% {
+		opacity: 100;
+		width: 100%;
+		height: 100%;
+	}
+	90% {
+		opacity: 100;
+		width: 100%;
+		height: 100%;
+	}
+	100% {
+		opacity: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+@keyframes StartUpFontP {
+	0% {
+		transform: translate(-100%, 0%);
+	}
+	10% {
+		transform: translate(0%, 0%);
+	}
+	90% {
+		transform: translate(50%, 0%);
+	}
+	100% {
+		transform: translate(-100%, 0%);
+	}
+}
+@keyframes StartUpFontH2 {
+	0% {
+		transform: translate(0%, -100%);
+	}
+	10% {
+		transform: translate(0%, 0%);
+	}
+	90% {
+		transform: translate(0%, 0%);
+	}
+	100% {
+		transform: translate(0%, -100%);
+	}
+}
+
+@keyframes WelcomeIMG {
+	0% {
+		transform: translate(0%, -8px);
+	}
+	50% {
+		transform: translate(0%, 8px);
+	}
+	100% {
+		transform: translate(0%, -8px);
+	}
+}
+@keyframes Particles {
+	0% {
+		transform: translateY(0%);
+		bottom: 0%;
+	}
+
+	100% {
+		transform: translateY(-100%);
+		bottom: 100%;
+	}
+}
+
+@keyframes Pulse {
+	0% {
+	}
+
+	50% {
+		box-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+		text-shadow: 4px 4px 8px aqua, 0 0 25px blue, 0 0 5px violet;
+	}
+	100% {
+	}
+}

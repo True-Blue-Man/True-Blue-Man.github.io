@@ -4,7 +4,12 @@
 		<title>Downloads</title>
 		<meta name="description" content="A simple introduction to HTML" />
 		<meta name="author" content="Diante Littles" />
-		<link rel="stylesheet" href="./StyleSheets/HomePage.css" />
+		<link rel="stylesheet" href="./StyleSheets/Main.css" />
+		<link rel="stylesheet" href="./StyleSheets/ScrollElements.css" />
+		<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+	/>
 		<link
 		rel="shortcut icon"
 		type="image/x-icon"
@@ -14,76 +19,39 @@
 		<style></style>
 	</head>
 
-	<body style="background-color:black;">
+	<body>
 		<div id="mySidenav" class="sidenav">
+			<a href="index.html" class="title">
+				<img
+					src="./ImageDir/TBH_icon.png"
+					style="align-self: auto;"
+					width="32px"
+					height="32px"
+					alt="HomePage"
+				/>TrueBlueHub</a
+			>
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-				>&Otimes;</a
+				>&otimes;</a
 			>
 			<a href="index.html"
-				><img
-					src="./ImageDir/Home_icon.png"
-					style="align-self: auto;"
-					width="32px"
-					height="32px"
-					alt="HomePage"
-				/>HomePage</a
+				><i class="fa fa-home"></i> Home</a
 			>
-			<a href="SocialHub.html"
-				><img
-					src="./ImageDir/Social_icon.png"
-					style="align-self: auto;"
-					width="32px"
-					height="32px"
-					alt="HomePage"
-				/>SocialHub</a
-			>
-			<a href="Products.html"
-				><img
-					src="./ImageDir/Products_icon.png"
-					style="align-self: auto;"
-					width="32px"
-					height="32px"
-					alt="Products"
-				/>Products</a
-			>
-			<a href="Services.html"
-				><img
-					src="./ImageDir/Services_icon.png"
-					style="align-self: auto;"
-					width="32px"
-					height="32px"
-					alt="Services"
-				/>Services</a
-			>
-			<a href="#"
-				><img
-					src="./ImageDir/Donate_icon.png"
-					style="align-self: auto;"
-					width="32px"
-					height="32px"
-					alt="Donate"
-				/>Donate</a
-			>
-			<a href="Community.html"
-				><img
-					src="./ImageDir/Community_icon.png"
-					style="align-self: auto;"
-					width="32px"
-					height="32px"
-					alt="Community"
-				/>Community</a
-			>
-			<a href="#"
-				><img
-					src="./ImageDir/Support_icon.png"
-					style="align-self: auto;"
-					width="32px"
-					height="32px"
-					alt="Support"
-				/>Support</a
-			>
+			<a href="Dashboard.html"
+			><i class="fa fa-dashboard"></i>Dashboard</a
+		>
+		<a href="Products.html"
+			><i class="fa fa-product-hunt"></i> Products</a
+		>
+		<a href="Services.html"
+			><i class="fa fa-tasks"></i> Services</a
+		>
+		<a href="Community.html"
+			><i class="fa fa-user"></i> Community</a
+		>
+		<a href="Support.html"
+			><i class="fa fa-send"></i> Support</a
+		>
 		</div>
-
 		<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
 		<div id="main">
 			<div class="container">
@@ -101,77 +69,28 @@
 			</div>
 
 			<div id="navbar">
-				<!-- <a class="active"  href="javascript:void(0)"><a href =HomePage.html><img src="Home_icon.png" style="align-self: auto;" width="32px" height = "32px" alt="HomePage"></a></a>
-                       --><a
-					href="javascript:void(0)"
-					class="active"
-					onclick="openNav()"
-					><img
-						src="./ImageDir/MenuIcon.png"
-						style="align-self: auto;"
-						width="32px"
-						height="32px"
-						alt="MenuIcon"
-				/></a>
-				<a
-					href="https://www.youtube.com/channel/UCXe2IQlE5lwTpZgIS0zzQnw?view_as=subscriber"
-					><img
-						src="./ImageDir/Home_icon.png"
-						style="align-self: auto;"
-						width="32px"
-						height="32px"
-						alt="HomePage"
-				/></a>
-				<a
-					href="https://www.youtube.com/channel/UCXe2IQlE5lwTpZgIS0zzQnw?view_as=subscriber"
-					><img
-						src="./ImageDir/DeviantArt_icon.png"
-						style="align-self: auto;"
-						width="32px"
-						height="32px"
-						alt="HomePage"
-				/></a>
-				<a
-					href="https://www.youtube.com/channel/UCXe2IQlE5lwTpZgIS0zzQnw?view_as=subscriber"
-					><img
-						src="./ImageDir/Discord_icon.png"
-						style="align-self: auto;"
-						width="32px"
-						height="32px"
-						alt="HomePage"
-				/></a>
-				<a href="https://twitter.com/BluemanTrue"
-					><img
-						src="./ImageDir/Twitter_icon.png"
-						style="align-self: auto;"
-						width="32px"
-						height="32px"
-						alt="HomePage"
-				/></a>
-				<a
-					href="https://www.youtube.com/channel/UCXe2IQlE5lwTpZgIS0zzQnw?view_as=subscriber"
-					><img
-						src="./ImageDir/SoundCloud_icon.png"
-						style="align-self: auto;"
-						width="32px"
-						height="32px"
-						alt="HomePage"
-				/></a>
-				<a
-					href="https://www.youtube.com/channel/UCXe2IQlE5lwTpZgIS0zzQnw?view_as=subscriber"
-					><img
-						src="./ImageDir/YouTube_icon.png"
-						style="align-self: auto;"
-						width="32px"
-						height="32px"
-						alt="YouTube"
-				/></a>
+				<a href="#" class="active" onclick="openNav()"><i class="fa fa-bars"></i></a>
+				<b><img src="./ImageDir/TBH_icon.png" width="32vw">TrueBlueHub</img></b>
+				<s href="javascript:void(0)"
+					><i class="fa fa-search"></i> Search Currently is Offline.
+				</s>
+				<a href="Support.html" class="link"><i class="fa fa-support"></i> Support</a>
+				<a href="Community.html" class="link"><i class="fa fa-user"></i> Community</a>
+				<a href="Services.html" class="link"><i class="fa fa-tasks"></i> Services</a>
+				<a href="Products.html" class="link"><i class="fa fa-product-hunt"></i> Products</a>
+				<g><i class="fa fa-download"></i> Downloads</g>
+				<a href="Dashboard.html" class="link"><i class="fa fa-dashboard"></i> Dashboard</a>
+				<a href="index.html" class="link"><i class="fa fa-home"></i> Home</a>	
 			</div>
 			<div style="clear:both">
-				<center><h2>&CircleTimes; Oops No Page &CircleTimes; </h2></center>
-				<p> 
-					Unfortunatly this page is still under construction. This is because the Site Creators are still gathering data in order to build this page this is also to ensure that the page has highest quality any functionality avalable. we appologise for any inconveniences this may have caused you. If you have any concerns as to when this page or another, will be fully operational feel free to Contact TrueBlueMan. (trueblue2515@gmail.com).
-				</p>
+					<center>
+							<h2><i class="fa fa-ticket"></i> Comming Soon!!! <i class="fa fa-ticket"></i></h2>
+							<p>We at TrueBlueHub are happy to announce that our free "Downloadable Content" will be added on November 11, 2019 at 11 pm est.</p>
+							<p>Depending on how fast we complete the store, it may be available sooner. So please follow us on Twitter or Join our Discord Server to stay updated.</p>
+							<h2>11/11/2019 @11pm Est</h2>
+							<hr style="width: 75%;"> 
+							<p id="demo" style="font-size:30px"></p>
+					</center>
 			</div>
 			<script>
 				window.onscroll = function() {
@@ -210,3 +129,33 @@
 		</div>
 	</body>
 </html>
+<script>
+		// Set the date we're counting down to
+		var countDownDate = new Date("Nov 11, 2019 11:00:00").getTime();
+		
+		// Update the count down every 1 second
+		var countdownfunction = setInterval(function() {
+		
+		// Get todays date and time
+		var now = new Date().getTime();
+		
+		// Find the distance between now an the count down date
+		var distance = countDownDate - now;
+		
+		// Time calculations for days, hours, minutes and seconds
+		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		
+		// Output the result in an element with id="demo"
+		document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+		+ minutes + "m " + seconds + "s ";
+		
+		// If the count down is over, write some text 
+		if (distance < 0) {
+		  clearInterval(countdownfunction);
+		  document.getElementById("demo").innerHTML = "EXPIRED";
+		}
+		}, 1000);
+		</script>

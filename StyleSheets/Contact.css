@@ -1,0 +1,22 @@
+.Contact{
+overflow: hidden;
+	align-self:center;
+	justify-self: center;
+}
+
+.Contact img
+{
+    float: left;
+    padding: 0px, 32px;
+    width:96px; 
+    height:96px;
+    border-radius: 50%
+}
+.Contact h3
+{
+    float: right;
+}
+.Contact::after
+{
+    clear: both; 
+}

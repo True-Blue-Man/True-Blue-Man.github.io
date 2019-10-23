@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Social Hub</title>
+        <meta name="description" content="A simple introduction to HTML">
+        <meta name="author" content ="Diante Littles">
+        <link rel="stylesheet" href="./StyleSheets/Main.css" />
+        <link rel="stylesheet" href="./StyleSheets/ScrollElements.css" />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+        <link
+        rel="shortcut icon"
+        type="image/x-icon"
+        href="./ImageDir/TBH_icon.png"
+      />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+    </style>
+    </head>
+
+      
+    <body>
+      <div id="mySidenav" class="sidenav">
+        <a href="index.html" class="title">
+          <img
+            src="./ImageDir/TBH_icon.png"
+            style="align-self: auto;"
+            width="32px"
+            height="32px"
+            alt="HomePage"
+          />TrueBlueHub</a
+        >
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&otimes;</a
+        >
+        <a href="index.html"
+          ><i class="fa fa-home"></i> Home</a
+        >
+      <a href="Downloads.html"
+        ><i class="fa fa-download"></i> Downloads</a
+      >
+      <a href="Products.html"
+        ><i class="fa fa-product-hunt"></i> Products</a
+      >
+      <a href="Services.html"
+        ><i class="fa fa-tasks"></i> Services</a
+      >
+      <a href="Community.html"
+        ><i class="fa fa-user"></i> Community</a
+      >
+      <a href="Support.html"
+        ><i class="fa fa-send"></i> Support</a
+      >
+      </div>
+              <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+              <div id="main">                    
+                      <div id="navbar">
+                        <a href="#" class="active" onclick="openNav()"><i class="fa fa-bars"></i></a>
+                        <b><img src="./ImageDir/TBH_icon.png" width="32vw">TrueBlueHub</img></b>
+                        <a href="Support.html" class="link"><i class="fa fa-support"></i> Support</a>
+                        <a href="Community.html" class="link"><i class="fa fa-user"></i> Community</a>
+                        <a href="Services.html" class="link"><i class="fa fa-tasks"></i> Services</a>
+                        <a href="Products.html" class="link"><i class="fa fa-product-hunt"></i> Products</a>
+                        <a href="Downloads.html" class="link"><i class="fa fa-download"></i> Downloads</a>
+                        <g><i class="fa fa-dashboard"></i>Dashboard</g>
+                        <a href="index.html" class="link"><i class="fa fa-home"></i> Home</a>
+                      </div>
+                      <div class="parallax">
+                        <center><h1>TrueBlueHub <br>Dashboard</br></h1>
+                        </center>
+                      
+                    </div>
+                  <div  style="clear:both">
+                      <center>
+                          <h2>Unfortunately this page is still under construction.</h2>
+                          <h3>While this page is not complete yet, we are happy to inform you that it will be up soon.</h3>
+                          <p>
+                            You may still view the contents of this page. 
+                            However please bear in mind that not all things are functional at the moment.
+                          </p>
+                          <h2>10/25/2019 @12pm Est</h2>
+                           <hr style="width: 75%;"> 
+                           <p id="demo" style="font-size:30px"></p>
+                          </center>   
+              </div>
+                <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+    tablinks.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+    tablinks.classList.remove("sticky");
+  }
+}
+                function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+                </script>
+		</div>
+
+		<!--<h1 style="color:aqua;" margin-left:15px >My First WebPage</h1>-->
+
+		<div style="color:lime;" id="footer">
+			<center>&copy;Diante Littles 2019. All rights reserved.</center>
+		</div>
+	</body>
+</html>
+
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Oct 25, 2019 12:00:00").getTime();
+    
+    // Update the count down every 1 second
+    var countdownfunction = setInterval(function() {
+    
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+      clearInterval(countdownfunction);
+      document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+    }, 1000);
+    </script>
