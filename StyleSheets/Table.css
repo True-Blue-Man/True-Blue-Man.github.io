@@ -4,7 +4,6 @@
     grid-template-columns:repeat(auto-fit, minmax(300px,1fr)) ;
 	grid-gap: 16px 48px;
 	padding: 16px 48px;
-	overflow: hidden;
 }
 .Table div
 {
