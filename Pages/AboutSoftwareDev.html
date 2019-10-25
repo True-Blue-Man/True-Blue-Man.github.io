@@ -2,8 +2,11 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
-		<title>TrueBlueHub</title>
-		<meta name="description" content="Home of the TrueBlueNation" />
+		<title>About Software</title>
+		<meta
+			name="description"
+			content="Learn all that you need about our development process in this interactive guide."
+		/>
 		<meta name="author" content="Diante Littles" />
 		<link rel="stylesheet" href="../StyleSheets/Main.css" />
 		<link rel="stylesheet" href="../StyleSheets/Table.css" />
@@ -16,11 +19,21 @@
 		<link
 			rel="shortcut icon"
 			type="image/x-icon"
-			href="./ImageDir/TBH_icon.png"
+			href="../ImageDir/TBH_icon.png"
 		/>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<style></style>
+		<style>
+			#Web {
+				background-color: rgb(0, 132, 255);
+			}
+			#App {
+				background-color: rgb(0, 132, 255);
+			}
+			#Full {
+				background-color: rgb(0, 132, 255);
+			}
+		</style>
 		<script src="./Scripts/CookieTest.js"></script>
 	</head>
 	<body>
@@ -31,208 +44,324 @@
 				<p>You may close this tab when you are done placing your order.</p>
 			</div>
 			<div>
-				<button class="accordion" onclick="">
-					<center><h2>Features</h2></center>
-					>
+				<button
+					class="tablink"
+					onclick="openPage('Web' , this, 'rgb(0, 132, 255)')"
+					style="width: 33.3%;"
+				>
+					<i class="fa fa-table"></i>
 				</button>
-				<div class="panel">
-                    <h3>Included Features</h3>
-                    
-                    <p>
-                          General Features that are included:
-                    </p>
-                    <ul>
-                        <li>Sys-Tray api (allow System Tray Support)</li>
-                        <li>Color Schemes</li>
-                        <li>File Dragging</li>
-                        <li>File Embeding</li>
-                        <li>Full Threadded Memory</li>
-                    </ul>
-					<p>
-						When you order a custom service then we will include one of the
-						features for no additional charge. however we can also add other
-						features for a cheap price.
-						<span style="color: limegreen;">($1.00-$5.00 USD)</span>
-						or if you'd like you could request a full Dashboard which includes
-						all features for the full price of
-						<span style="color: limegreen;">($100.00 USD)</span>
-                    </p>
-					<div class="Table">
-						<div>
-                            <h2>Media Player</h2>
-                            <h3>Add-on Price: <span style="color: limegreen;">$5.00 USD</span></h3>
-							<ul>
-								<li>Plays multiple file types</li>
-								<li>
-									Supported file types include but aren't limited to:
-									<ul style="font-size: 14px;">
+				<button
+					class="tablink"
+					onclick="openPage('App', this, 'rgb(0, 132, 255)')"
+					id="defaultOpen"
+					style="width: 33.3%;"
+				>
+					<i class="fa fa-windows"></i>
+				</button>
+				<button
+					class="tablink"
+					onclick="openPage('Full', this, 'rgb(0, 132, 255)')"
+					style="width: 33.3%;"
+				>
+					<i class="fa fa-universal-access"></i>
+				</button>
+
+				<div id="Web" class="tabcontent">
+					<h2>Web Development</h2>
+					<button class="accordion" onclick="">
+						<center><h2>Languages We Use.</h2></center>
+					</button>
+					<div class="panel">
+						<div class="Table">
+							<div>
+								<h2>Html</h2>
+								<h3>Hyper Text Markup Language</h3>
+								<p>
+									This language is processed by web-browsers in order to render
+									a web page. It was originally created as a way to share info
+									across the internet. This language was originally created by
+									Tim Berners Lee in 1990.
+								</p>
+								<p>
+									Since its debut, HTML has come a long way and thanks to
+									various other language integrations (CSS, JavaScript, Python,
+									PHP, SQL and More.) Web Pages are widely used by everyone and
+									are in high demand today.
+								</p>
+							</div>
+							<div>
+								<h2>CSS</h2>
+								<h3>Cascading Style Sheets</h3>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Voluptatibus ullam dolores quisquam modi quaerat adipisci non
+									ipsam vitae aliquam, cupiditate soluta magni et exercitationem
+									corrupti unde voluptatem quis vel! Iste.
+								</p>
+							</div>
+							<div>
+								<h2>JavaScript</h2>
+								<h3>Programing language</h3>
+								<p>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Aspernatur quas nisi vel. Illo saepe, dolorum vero porro,
+									repellendus atque laborum cumque doloremque quam sed officiis?
+									Ratione iusto magni error officiis.
+								</p>
+							</div>
+						</div>
+					</div>
+					<button class="accordion" onclick="">
+						<center><h2>Available Packages</h2></center>
+					</button>
+					<div class="panel">
+						<div class="Table">
+							<div>
+								<h2>Personal</h2>
+							</div>
+							<div>
+								<h2>Community</h2>
+							</div>
+							<div>
+								<h2>Business</h2>
+							</div>
+						</div>
+					</div>
+					<button class="accordion" onclick="">
+						<center><h2>Site Deployments.</h2></center>
+					</button>
+					<div class="panel">
+						<div class="Table">
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+					</div>
+				</div>
+
+				<div id="App" class="tabcontent">
+					<h2>Software Development</h2>
+					<button class="accordion" onclick="">
+						<center><h2>Features</h2></center>
+					</button>
+					<div class="panel">
+						<h3>Included Features</h3>
+
+						<p>
+							General Features that are included:
+						</p>
+						<ul>
+							<li>Sys-Tray api (allow System Tray Support)</li>
+							<li>Color Schemes</li>
+							<li>File Dragging</li>
+							<li>File Embeding</li>
+							<li>Full Threadded Memory</li>
+						</ul>
+						<p>
+							When you order a custom service then we will include one of the
+							features for no additional charge. however we can also add other
+							features for a cheap price.
+							<span style="color: limegreen;">($1.00-$5.00 USD)</span>
+							or if you'd like you could request a full Dashboard which includes
+							all features for the full price of
+							<span style="color: limegreen;">($100.00 USD)</span>
+						</p>
+						<div class="Table">
+							<div>
+								<h2>Media Player</h2>
+								<h3>
+									Add-on Price: <span style="color: limegreen;">$5.00 USD</span>
+								</h3>
+								<ul>
+									<li>Plays multiple file types</li>
+									<li>
+										Supported file types include but aren't limited to:
+										<ul style="font-size: 14px;">
+											<li>
+												Static Images & Animated Images (.png, .gif, .jpeg,
+												.jpg, .bmp, .tiff, and more)
+											</li>
+											<li>Videos(.mp4, .wmv, .webm, .mov, and much more)</li>
+											<li>Audio(.mp3, .wma, .wav, .m4a, .ogg, )</li>
+											<li>Flash(.swf)</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div>
+								<h2>Presentation</h2>
+								<h3>
+									Add-on Price: <span style="color: limegreen;">$2.50 USD</span>
+								</h3>
+								<ul>
+									<li>Allows you to make presentations.</li>
+									<li>Perfect for: School, Work, or Home.</li>
+									<li>Output: infographics and flash presentations.</li>
+									<li>Create slide-shows with image integrations.</li>
+									<li>slides, sheets, and documents all in one program.</li>
+								</ul>
+							</div>
+							<div>
+								<h2>Marketing & Buisness Solutions</h2>
+								<h3>
+									Add-on Price: <span style="color: limegreen;">$5.00 USD</span>
+								</h3>
+								<ul>
+									<li>Track company growth margins.</li>
+									<li>Access stock information.</li>
+									<li>Economic Charts, Graphs and Grids.</li>
+									<li>
+										Precise equations ensure that all economic data is accurate
+									</li>
+									<li></li>
+								</ul>
+							</div>
+							<div>
+								<h2>Gaming</h2>
+								<h3>
+									Add-on Price: <span style="color: limegreen;">$1.00 USD</span>
+								</h3>
+								<ul>
+									<li>Game Launcher for your PC Games</li>
+									<li>Joystick Mapper to map keys to Controllers</li>
+									<li>AI Game Bots for 2 player controls</li>
+									<li>Game Emulators Included (freeware/shareware)</li>
+								</ul>
+							</div>
+							<div>
+								<h2>Security & Encryption</h2>
+								<h3>
+									Add-on Price: <span style="color: limegreen;">$4.00 USD</span>
+								</h3>
+								<ul>
+									<li>AutoDetect Malicious Processes</li>
+									<li>Lock Files</li>
+								</ul>
+							</div>
+							<div>
+								<h2>File System & Automation</h2>
+								<h3>
+									Add-on Price: <span style="color: limegreen;">$3.00 USD</span>
+								</h3>
+								<ul>
+									<li>Manage your files in our custom file system.</li>
+									<li>Schedule tasks to stay on track.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="Table">
+							<div
+								style="border-top: 16px solid blue; border-bottom: 16px solid blue;"
+							>
+								<p>
+									Now that you are more informed about our software development
+									feel free to place a Service Order.
+								</p>
+								<a href="./Order.html"><span>&#10148;</span> Order Now!!!</a>
+							</div>
+						</div>
+					</div>
+					<button class="accordion" onclick="">
+						<center><h2>Packaging</h2></center>
+					</button>
+					<div class="panel">
+						<h3>Compressed Zipped Folders(.zip)</h3>
+						<p>
+							These files typically contain a multitude of files and folders
+							compressed in to a single file ending in the ".zip" extension in
+							its name. Zipped Folders are great for Stand Alone Executables as
+							these types of programs don't need to be installed to call system
+							libraries this also makes them ideal for programs you wish to run
+							from a usb drive.
+						</p>
+						<center>
+							<div class="Table">
+								<div
+									style="border-top:16px solid lime; border-bottom:16px solid lime;"
+								>
+									<h2>Pros</h2>
+									<ul>
+										<li>Quick Setup.</li>
+										<li>Great for Stand Alone Executables.</li>
 										<li>
-											Static Images & Animated Images (.png, .gif, .jpeg, .jpg,
-											.bmp, .tiff, and more)
+											Software can still call funtions from pre-installed
+											libraries.
 										</li>
-										<li>Videos(.mp4, .wmv, .webm, .mov, and much more)</li>
-										<li>Audio(.mp3, .wma, .wav, .m4a, .ogg, )</li>
-										<li>Flash(.swf)</li>
 									</ul>
-								</li>
-							</ul>
-						</div>
-						<div>
-                            <h2>Presentation</h2>
-                            <h3>Add-on Price: <span style="color: limegreen;">$2.50 USD</span></h3>
-							<ul>
-								<li>Allows you to make presentations.</li>
-                                <li>Perfect for: School, Work, or Home.</li>
-                                <li>Output: infographics and flash presentations.</li>
-                                <li>Create slide-shows with image integrations.</li>
-                                <li>slides, sheets, and documents all in one program.</li>
-							</ul>
-						</div>
-						<div>
-                            <h2>Marketing</h2>
-                            <h3>Add-on Price: <span style="color: limegreen;">$5.00 USD</span></h3>                            
-							<ul>
-                                <li>Track company growth margins.</li>
-                                <li>Access stock information.</li>
-                                <li>Economic Charts, Graphs and Grids.</li>
-                                <li>Precise equations ensure that all economic data is accurate</li>
-							</ul>
-						</div>
-						<div>
-                            <h2>Gaming</h2>
-                            <h3>Add-on Price: <span style="color: limegreen;">$1.00 USD</span></h3>                            
-							<ul>
-                                <li>Game Launcher for your PC Games</li>
-                                <li>Joystick Mapper to map keys to Controllers</li>
-                                <li>AI Game Bots for 2 player controls</li>
-                                <li>Game Emulators Included (freeware/shareware)</li>
-							</ul>
-						</div>
-						<div>
-                            <h2>Security & Encryption</h2>
-                            <h3>Add-on Price: <span style="color: limegreen;">$4.00 USD</span></h3>                            
-							<ul>
-                                <li>AutoDetect Malicious Processes</li>
-                                <li>Lock Files</li>
-							</ul>
-						</div>
-						<div>
-                            <h2>File System & Automation</h2>
-                            <h3>Add-on Price: <span style="color: limegreen;">$3.00 USD</span></h3>                            
-							<ul>
-                                <li>Manage your files in our custom file system.</li>
-                                <li>Schedule tasks to stay on track.</li>
-							</ul>
-						</div>
-					</div>
-					<div class="Table">
-						<div
-							style="border-top: 16px solid blue; border-bottom: 16px solid blue;"
-						>
-							<p>
-								Now that you are more informed about our software development
-								feel free to place a Service Order.
-							</p>
-							<a href="./Order.html"><span>&#10148;</span> Order Now!!!</a>
+								</div>
+								<div
+									style="border-top:16px solid red; border-bottom:16px solid red;"
+								>
+									<h2>Cons</h2>
+									<ul>
+										<li>
+											AntiVirus software may call a false positive on the
+											software.
+										</li>
+										<li>Not Recommended for Powerful Programs</li>
+										<li>
+											If the software requires additional libraries to be
+											installed, this can be a nightmare.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</center>
+						<h3>Installation Packages(.exe)</h3>
+						<p>
+							These files are considered to be official setup wizards. They
+							usually install the program as well as the required programs onto
+							the local device. This makes them great for heavy duty programs
+							that make large amounts of calls from multiple libraries. Not only
+							that but it ensures that the files programs and libraries needed
+							to run said files are properly installed secure location while
+							creating shortcuts for easy access after said installation.
+						</p>
+						<center>
+							<div class="Table">
+								<div
+									style="border-top:16px solid lime; border-bottom:16px solid lime;"
+								>
+									<h2>Pros</h2>
+									<ul>
+										<li>
+											Secure Installation makes it less likely to get a false
+											positive returned by your AV Software.
+										</li>
+										<li>
+											Great for Powerful Software.
+										</li>
+									</ul>
+								</div>
+								<div
+									style="border-top:16px solid red; border-bottom:16px solid red;"
+								>
+									<h2>Cons</h2>
+									<ul>
+										<li>Longer Setup Time.</li>
+										<li>Installed software is not as portable.</li>
+										<li>Access prompts may appear.</li>
+									</ul>
+								</div>
+							</div>
+						</center>
+						<div class="Table">
+							<div
+								style="border-top: 16px solid blue; border-bottom: 16px solid blue;"
+							>
+								<p>
+									Now that you are more informed about our software development
+									feel free to place a Service Order.
+								</p>
+								<a href="./Order.html"><span>&#10148;</span> Order Now!!!</a>
+							</div>
 						</div>
 					</div>
 				</div>
-				<button class="accordion" onclick="">
-					<center><h2>Packaging</h2></center>
-				</button>
-				<div class="panel">
-					<h3>Compressed Zipped Folders(.zip)</h3>
-					<p>
-						These files typically contain a multitude of files and folders
-						compressed in to a single file ending in the ".zip" extension in its
-						name. Zipped Folders are great for Stand Alone Executables as these
-						types of programs don't need to be installed to call system
-						libraries this also makes them ideal for programs you wish to run
-						from a usb drive.
-					</p>
-					<center>
-						<div class="Table">
-							<div
-								style="border-top:16px solid lime; border-bottom:16px solid lime;"
-							>
-								<h2>Pros</h2>
-								<ul>
-									<li>Quick Setup.</li>
-									<li>Great for Stand Alone Executables.</li>
-									<li>
-										Software can still call funtions from pre-installed
-										libraries.
-									</li>
-								</ul>
-							</div>
-							<div
-								style="border-top:16px solid red; border-bottom:16px solid red;"
-							>
-								<h2>Cons</h2>
-								<ul>
-									<li>
-										AntiVirus software may call a false positive on the
-										software.
-									</li>
-									<li>Not Recommended for Powerful Programs</li>
-									<li>
-										If the software requires additional libraries to be
-										installed, this can be a nightmare.
-									</li>
-								</ul>
-							</div>
+				<div id="Full" class="tabcontent">
+						<h2>Software Development</h2>
 						</div>
-					</center>
-					<h3>Installation Packages(.exe)</h3>
-					<p>
-						These files are considered to be official setup wizards. They
-						usually install the program as well as the required programs onto
-						the local device. This makes them great for heavy duty programs that
-						make large amounts of calls from multiple libraries. Not only that
-						but it ensures that the files programs and libraries needed to run
-						said files are properly installed secure location while creating
-						shortcuts for easy access after said installation.
-					</p>
-					<center>
-						<div class="Table">
-							<div
-								style="border-top:16px solid lime; border-bottom:16px solid lime;"
-							>
-								<h2>Pros</h2>
-								<ul>
-									<li>
-										Secure Installation makes it less likely to get a false
-										positive returned by your AV Software.
-									</li>
-									<li>
-										Great for Powerful Software.
-									</li>
-								</ul>
-							</div>
-							<div
-								style="border-top:16px solid red; border-bottom:16px solid red;"
-							>
-								<h2>Cons</h2>
-								<ul>
-									<li>Longer Setup Time.</li>
-									<li>Installed software is not as portable.</li>
-									<li>Access prompts may appear.</li>
-								</ul>
-							</div>
-						</div>
-					</center>
-					<div class="Table">
-						<div
-							style="border-top: 16px solid blue; border-bottom: 16px solid blue;"
-						>
-							<p>
-								Now that you are more informed about our software development
-								feel free to place a Service Order.
-							</p>
-							<a href="./Order.html"><span>&#10148;</span> Order Now!!!</a>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
 		<script>
@@ -250,6 +379,24 @@
 					}
 				});
 			}
+		</script>
+		<script>
+			function openPage(pageName, elmnt, color) {
+				var i, tabcontent, tablinks;
+				tabcontent = document.getElementsByClassName("tabcontent");
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+				}
+				tablinks = document.getElementsByClassName("tablink");
+				for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].style.backgroundColor = "";
+				}
+				document.getElementById(pageName).style.display = "block";
+				elmnt.style.backgroundColor = color;
+			}
+
+			// Get the element with id="defaultOpen" and click on it
+			document.getElementById("defaultOpen").click();
 		</script>
 	</body>
 </html>

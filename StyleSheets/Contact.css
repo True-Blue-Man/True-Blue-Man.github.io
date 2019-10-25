@@ -8,10 +8,11 @@ overflow: hidden;
 {
     float: left;
     padding: 0px, 32px;
-    width:96px; 
-    height:96px;
+    width:120px; 
+    height:120px;
     border-radius: 50%
 }
+
 .Contact h3
 {
     float: right;
@@ -19,4 +20,34 @@ overflow: hidden;
 .Contact::after
 {
     clear: both; 
+}
+@media screen and (max-width: 640px) {
+    .Contact{
+        overflow: hidden;
+            align-self:center;
+            justify-self: center;
+        }
+        
+        .Contact img
+        {
+            float: left;
+            padding: 0px, 32px;
+            width:96px; 
+            height:96px;
+            border-radius: 50%
+        }
+        .Contact h2
+        {
+            font-size: 8vw;
+        }
+        .Contact h3
+        {
+            font-size: 4vw;
+            float: right;
+        }
+        .Contact::after
+        {
+            clear: both; 
+        }
+
 }

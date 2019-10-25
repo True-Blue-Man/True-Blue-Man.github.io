@@ -6,9 +6,10 @@
 	align-self:center;
 	justify-self: center;
 }
+
 .TitleCard:hover {
-	border-top: 16px solid aqua;
-	border-bottom: 16px solid aqua;
+	border-top: 8px solid aqua;
+	border-bottom: 8px solid aqua;
 	border-radius: 28px;
 	box-shadow: 4px 4px 8px #222, 0 0 25px #111, 0 0 5px #333;
 	text-shadow: 4px 4px 8px #222, 0 0 25px #111, 0 0 5px #333;

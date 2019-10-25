@@ -400,7 +400,6 @@ h3 {
 #main {
 	transition: margin-left 0.5s;
 	width:100%;
-	padding: 0;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -560,7 +559,6 @@ display: none;
 		margin: 0;
 		font-family: Arial;
 		scroll-behavior: smooth;
-		display:flex;
 	}
 	.Sizer
 	{

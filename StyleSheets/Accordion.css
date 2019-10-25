@@ -133,6 +133,16 @@
 }
 
 @media screen and (max-width: 640px) {
+	
+	.panel {
+		border-radius: 28px;
+		max-height: 0vh;
+		padding: 0 0px;
+		overflow: hidden;
+		width: 100%;
+		transition: max-height 0.5s ease-in-out;
+		/*opacity: 0.5;*/
+	}
 	.livechat {
 		z-index: 2;
 		position: fixed;
