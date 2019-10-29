@@ -4,8 +4,11 @@
         <title>Social Hub</title>
         <meta name="description" content="A simple introduction to HTML">
         <meta name="author" content ="Diante Littles">
-        <link rel="stylesheet" href="./StyleSheets/Main.css" />
-        <link rel="stylesheet" href="./StyleSheets/ScrollElements.css" />
+        <link rel="stylesheet" href="./StyleSheets/Main.css"/>
+		    <link rel="stylesheet" href="./StyleSheets/Accordion.css"/>
+	    	<link rel="stylesheet" href="./StyleSheets/ModalStyles.css"/>
+    		<link rel="stylesheet" href="./StyleSheets/Table.css"/>
+    		<link rel="stylesheet" href="./StyleSheets/ScrollElements.css"/>
         <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -69,24 +72,127 @@
                         <a href="index.html" class="link"><i class="fa fa-home"></i> Home</a>
                       </div>
                       <div class="parallax">
-                        <center><h1>TrueBlueHub <br>Dashboard</br></h1>
+                        <center>
+                          <h1>Dashboard</h1>
+                          <h2>Live overall stats for our website.</h2>
+                          <p>You can preview all aspects of our site as well as view live status of our guild.</p>
+                          <hr style = "width: 100%;">
                         </center>
                       
                     </div>
                   <div  style="clear:both">
-                      <center>
-                          <h2>Unfortunately this page is still under construction.</h2>
-                          <h3>While this page is not complete yet, we are happy to inform you that it will be up soon.</h3>
-                          <p>
-                            You may still view the contents of this page. 
-                            However please bear in mind that not all things are functional at the moment.
-                          </p>
-                          <h2>10/28/2019 @12pm Est</h2>
-                           <hr style="width: 75%;"> 
-                           <p id="demo" style="font-size:30px"></p>
-                          </center>   
+                      <div class="Table" style=" grid-template-columns:repeat(auto-fit, minmax(300px,1fr)) ;">
+                          
+                         <div style="border-top:16px solid aqua; border-bottom:16px solid aqua;">
+                               
+                               <center>
+                                <h2  style="color:aqua;">Updates.</h2>
+                                <p style="font-size:30px">Next Site Update 11/11/19 @12pm est</p>
+                                <hr style = "width: 75%;">
+                                 <p id="demo" style="font-size:30px"></p>
+                               </center>
+                                <h3>Schedule</h3> 
+                                <button class="accordion" onclick="">
+                                    <h2>(11/11/19) > Beta Launch Update [0.2.5]</h2>
+                                  </button>
+                                  <div class="panel"> 
+                                   <h3>Changes.</h3> 
+                                   <ul>
+                                       <li>
+                                            Downloads page will be online.
+                                       </li>
+                                       <li>
+                                            Guild SignUp Forms will be completed.
+                                       </li>
+                                       <li>
+                                             Improved Community Page. 
+                                       </li>
+                                    </ul>
+                                    </div>
+
+                                    <button class="accordion" onclick="">
+                                        <h2>(12/12/19) > Operationional Update [0.5.0]</h2>
+                                      </button>
+                                      <div class="panel"> 
+                                       <h3>Changes.</h3> 
+                                       <ul>
+                                           <li>
+                                               Products page to become online.
+                                           </li>
+                                           <li>
+                                               Expanded Community.
+                                           </li>
+                                           <li>
+                                                Fully Operational Site.
+                                           </li>
+                                        </ul>
+                                        </div>
+                                    <button class="accordion" onclick="">
+                                        <h2>(01/25/20) > React.js -Integrational Update [1.0.0]</h2>
+                                        </button>
+                                          <div class="panel"> 
+                                           <h3>Changes.</h3> 
+                                           <ul>
+                                               <li>
+                                                   React-Redux Update.
+                                               </li>
+                                               <li>
+                                                   Account systems.
+                                               </li>
+                                               <li>
+                                                   Games Page.
+                                               </li>
+                                                <p>
+                                                  In this build, Our site will migrate to the React.js Library.
+                                                  This will allow for better compatabity across platforms
+                                                  as well as Mobile App Development. 
+                                                </p>
+                                            </ul>
+                                            </div>
+                                <p>Please note that all updates are subject to change and may be delayed or rushed at any point.</p>
+                                    <center>
+                                <h3>Current Site Version</h3>
+                                <p> [0.2.0] (Beta Edition)</p>
+                                    </center>
+                          </div>
+                                                   
+                         <div style="border-top:16px solid aqua; border-bottom:16px solid aqua;">
+                               
+                            <center>
+                             <h2  style="color:aqua;">Live Stats.</h2>
+                            </center>
+                            <iframe
+                            src="https://discordapp.com/widget?id=606954821152669706&theme=dark"
+                            width="100%"
+                            height="500vh"
+                            allowtransparency="true"
+                            frameborder="0"
+                          ></iframe>
+                          <a href="https://info.flagcounter.com/r8pR"><img src="https://s11.flagcounter.com/countxl/r8pR/bg_000000/txt_FFFFFF/border_00FFFF/columns_2/maxflags_10/viewers_0/labels_1/pageviews_1/flags_0/percent_1/" alt="Flag Counter" border="0" width="100%"></a>
+		<a href="https://info.flagcounter.com/37h6"><img src="https://s01.flagcounter.com/map/37h6/size_s/txt_000000/border_CCCCCC/pageviews_1/viewers_0/flags_0/" alt="Flag Counter" border="0"  width="100%"></a>
+                       </div>
+                          
+              </div> 
+                         <script>
+                  //for accordion
+                  var acc = document.getElementsByClassName("accordion");
+                  var i;
+                  for (i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function() {
+                      this.classList.toggle("Active");
+                      var panel = this.nextElementSibling;
+                      if (panel.style.maxHeight > "0vh") {
+                        panel.style.maxHeight = "0vh";
+                      } else {
+                        panel.style.maxHeight = panel.scrollHeight + "vh";
+                      }
+                    });
+                  }
+                </script>
               </div>
+  
                 <script>
+                  
 window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("navbar");
@@ -130,7 +236,7 @@ function myFunction() {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
                 </script>
-		</div>
+	
 
 		<!--<h1 style="color:aqua;" margin-left:15px >My First WebPage</h1>-->
 
@@ -142,7 +248,7 @@ document.getElementById("defaultOpen").click();
 
 <script>
     // Set the date we're counting down to
-    var countDownDate = new Date("Oct 28, 2019 12:00:00").getTime();
+    var countDownDate = new Date("Nov 11, 2019 12:00:00").getTime();
     
     // Update the count down every 1 second
     var countdownfunction = setInterval(function() {
