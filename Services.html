@@ -5,9 +5,12 @@
 		<meta name="description" content="Preview and Order custom services for all your needs." />
 		<meta name="author" content="Diante Littles" />
 		<link rel="stylesheet" href="./StyleSheets/Main.css" />
+		<link rel="stylesheet" href="./StyleSheets/Accordion.css" />
 		<link rel="stylesheet" href="./StyleSheets/ScrollElements.css" />
 		<link rel="stylesheet" href="./StyleSheets/SideBar.css" />
-		<link rel="stylesheet" href="StyleSheets/Table.css">
+		<link rel="stylesheet" href="./StyleSheets/BottomBar.css" />
+		<link rel="stylesheet" href="./StyleSheets/Table.css">
+		<link rel="stylesheet" href="./StyleSheets/ModalStyles.css">
 		<link
 		rel="stylesheet"
 		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -15,11 +18,6 @@
 		<link rel="stylesheet" href="./StyleSheets/SmartPhone.css" />		
 		<link rel="stylesheet" href="./StyleSheets/Tablet.css" />
 		<link rel="stylesheet" href="./StyleSheets/Pc.css" />
-				
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-		/>
 		<link
 			rel="shortcut icon"
 			type="image/x-icon"
@@ -103,6 +101,21 @@
 				>&otimes;</a>
 				<iframe src="./Pages/Order.html" frameborder="0" width="100%" height="100%"></iframe> 
 			</div>
+
+			<div id="myBottomBar" class="bottombar">
+				<a href="#" class="title">
+						<img
+							src="./ImageDir/TBH_icon.png"
+							style="align-self: auto;"
+							width="32px"
+							height="32px"
+							alt="HomePage"
+						/>ServiceOrder</a
+					>
+			<a href="javascript:void(0)" class="closebtn" onclick="closeBottom()"
+			>&otimes;</a>
+			<iframe src="./Pages/AboutSoftwareDev.html" frameborder="0" width="100%" height="100%"></iframe> 
+		</div>
 				<div class="WebDesign">
 					<h2>Custom Web Development</h2>
 					
@@ -144,7 +157,7 @@
 	<li>Up to 10 pages included <p>(<span style="color: limegreen; text-shadow: 4px 4px 8px #222, 0 0 25px #111, 0 0 5px #333;">$5.00 USD</span> per any extra pages)</p></li>
 		<li>Custom Host Deployment (additional charges may apply depending on the host)</li>
 </ul>
-<center><a href="./Pages/Order.html" target="blank"><span>&#10148;</span>Order Now!!!</a></center>
+<center><a href="#" onclick="openSide()"><span>&#10148;</span>Order Now!!!</a></center>
 </div>
 
 <div class="TitleCard">
@@ -160,7 +173,7 @@
 		<li>Unlimited Pages</li>
 			<li>Account Systems and Support</li>
 	</ul>
-	<center><a href="./Pages/Order.html" target="blank"><span>&#10148;</span>Order Now!!!</a></center>
+	<center><a href="#" onclick="openSide()"><span>&#10148;</span>Order Now!!!</a></center>
 	</div>
 	
 </div>
@@ -169,7 +182,6 @@
 				<h3>Web Preview not available in Mobile Edition.</h3>
 			</div> 
            <div class=Sizer>
-				<link rel="stylesheet" href="./StyleSheets/Accordion.css" />
 				<button class="accordion" onclick="">
 						<h2>Website Preview</h2>
 					</button>
@@ -211,7 +223,7 @@
 						</div>
 					</div>
 			 </div>
-           </div>
+		   </div>
 			 <div style="clear:both">
 					<div class="WebDesign">
 						<h2>Custom App Development</h2>
@@ -226,7 +238,7 @@
 								<p>The general labor Fee is <span style="color: limegreen;">$20.00 USD</span> this covers the expense of us assembling your software.</p>
 								<h3>Features</h3>
 								<p>Additional features may vary in price however each feature is never more than <span style="color: limegreen;">$5.00 USD</span></p>
-								<a href="./Pages/Order.html" target="blank"><span>&#10148;</span>Make My Software!!!</a>
+								<a href="#" onclick="openSide()"><span>&#10148;</span>Make My Software!!!</a>
 							</div>
 
 							<div>
@@ -240,7 +252,7 @@
 									<li>Local End Communications (For Terminals or Interconnected PCs)</li>
 									<li>Remote Commmunications (For Secure Internet Communications)</li>
 								</ul>
-								<a href="./Pages/AboutSoftwareDev.html" target="blank"><span>&#10148;</span>View More!!!</a>
+								<a href="#" onclick="openBottom()" id="myBtn"><span>&#10148;</span>View More!!!</a>
 							</div>
 							<div>
 									<h2>Packaging</h2>
@@ -248,7 +260,7 @@
 									<p>we can package your software as a .zip file for a simple program that doesn't require high permissions</p>
 									<h3>Installer(.exe) (Recommended)</h3>
 									<p>This will allow you to install all required packages and libraries required to run Our Software</p>
-									<a href="./Pages/AboutSoftwareDev.html" target="blank"><span>&#10148;</span>Learn More!!!</a>
+									<a href="#" onclick="openBottom()" id="myBtn"><span>&#10148;</span>Learn More!!!</a>
 								</div>
 						</div>
 					</div>
@@ -266,7 +278,7 @@
 											<p>The Price is <span style="color: limegreen;">$1000.00 USD</span> (No Additional Prices) </p>
 											<h3>Features</h3>
 											<p>The price here covers the both software development and web development</p>
-											<a href="./Pages/Order.html" target="blank"><span>&#10148;</span>Get Started</a>
+											<a href="#" onclick="openSide()"><span>&#10148;</span>Get Started</a>
 										</div>
 			
 										<div>
@@ -280,7 +292,7 @@
 												<li>1 year guaranteed commitment to your Business, Community, etc. We will work for you!!! Full Support Included.</li>
 												<li>Full End Web Development (with hosting included).</li>
 											</ul>
-											<a href="./Pages/AboutSoftwareDev.html" target="blank"><span>&#10148;</span>View More!!!</a>
+											<a href="#" onclick="openBottom()" id="myBtn"><span>&#10148;</span>View More!!!</a>
 										</div>
 										<div>
 												<h2>Deployment</h2>
@@ -289,13 +301,13 @@
 												<p>Any prefered setup packages including (.zip) and (.exe)</p>
 												<h3>Web Hosting and Deployment</h3>
 												<p>Premimum Hosting at any host of your choosing</p>
-												<a href="./Pages/AboutSoftwareDev.html" target="blank"><span>&#10148;</span>Learn More!!!</a>
+												<a href="#" onclick="openBottom()" id="myBtn"><span>&#10148;</span>Learn More!!!</a>
 											</div>
 									</div>
 							</div>
 						</div>	
 				</div>	
-
+				</div>
 <script>
 		//for accordion
 		var acc = document.getElementsByClassName("accordion");
@@ -361,30 +373,46 @@ document.getElementById("defaultOpen").click();
 function openSide() {
 					document.getElementById("mySideBar").style.width = "100%";
 					document.getElementById("main").style.marginRight = "100%";
+					document.getElementById("main").style.overflowY = "hidden";
 					document.body.style.backgroundColor = "rgb(0,0,0,0.4)";
 				}
 
 				function closeSide() {
 					document.getElementById("mySideBar").style.width = "0";
 					document.getElementById("main").style.marginRight = "0";
+					document.getElementById("main").style.overflowY = "auto";
 					document.body.style.backgroundColor = "white";
 				}
+				function openBottom() {
+					document.getElementById("myBottomBar").style.height = "100%";
+					document.getElementById("main").style.marginBottom = "100%";
+					document.getElementById("myBottomBar").style.bottom = "0";
+					document.body.style.backgroundColor = "rgb(0,0,0,0.4)";
+				}
+
+				function closeBottom() {
+					document.getElementById("myBottomBar").style.height = "0";
+					document.getElementById("main").style.marginBottom = "0";
+					document.getElementById("myBottomBar").style.bottom = "-64px";
+					document.body.style.backgroundColor = "white";
+				}				
 			</script>
 		
-
-		<!--<h1 style="color:aqua;" margin-left:15px >My First WebPage</h1>-->
-
 		<div id="footer">
-			<div style="display: block; color: aqua; font-size: 18px;">&copy; 2019 TrueBlueHub & TrueBlueMan(Diante Littles).</div>
+			<div style="color: aqua; font-size: 18px;">&copy; 2019 TrueBlueHub & TrueBlueMan(Diante Littles).</div>
+			
+			<div style="text-align:right;">
 			<a href="#"><i class="fa fa-twitter"></i> Twitter</a>
 			<a href="#"><i class="fa fa-youtube-play"></i> YouTube</a>
 			<a href="#"><i class="fa fa-soundcloud"></i> SoundCloud</a>
 			<a href="#"><i class="fa fa-comment"></i> Discord</a>
 			<a href="#"><i class="fa fa-deviantart"></i> Deviant Art</a>
+			</div>
+			
 			
 			
 			</div>
-		</div>
+		<!--<h1 style="color:aqua;" margin-left:15px >My First WebPage</h1>-->
 	</div>
 	</body>
 </html>

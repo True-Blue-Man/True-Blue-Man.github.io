@@ -6,6 +6,7 @@
 		<meta name="author" content="Diante Littles" />
 		<link rel="stylesheet" href="./StyleSheets/Main.css" />
 		<link rel="stylesheet" href="./StyleSheets/ScrollElements.css" />
+		<link rel="stylesheet" href="./StyleSheets/ModalStyles.css" />
 		<link rel="stylesheet" href="./StyleSheets/SideBar.css" />
 		<link rel="stylesheet" href="./StyleSheets/Table.css" />
 		<link rel="stylesheet" href="./StyleSheets/Contact.css" />
@@ -106,11 +107,54 @@
 							<h3>click here!!!</h3>
 						</button>
 						<div class="panel">
-								<h2>Content not yet available</h2>
-							<p>This page is still under construction.</p>
-							<center>
-							<h2>11/11/2019 @12pm Est</h2>
-							<hr style="width: 75%;"> 
+								<center>
+						    <h2>Join Our Discord Server</h2>
+							<p>Stay connected for new and updates and other perks</p>
+							<div class="Table">
+								<div>
+									<h3>Live Stats</h3> 
+									<iframe
+                            src="https://discordapp.com/widget?id=606954821152669706&theme=dark"
+                            width="100%"
+                            height="500vh"
+                            allowtransparency="true"
+                            frameborder="0"
+						  ></iframe>
+								</div>
+								<div>
+										<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS-7G71zb1gGSYx9F_NY1J_yOox9Wc1-El0ZOHdg8rBDzTIpplIwLWdB4w35SbZ8jjk2UQSFYrv1mqq/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+									<a href="#" id="myBtn"><span>&#10148;</span> Join</a>
+									<div id="myModal" class="modal">
+											<div class="modal-content">
+												<span class="close">&times;</span>
+
+												<center><h2>Attention</h2></center>
+												<p>
+													You are about to leave the site and enter our discord server.
+													By doing so you are acknowleging that you have read the
+													Community Rules & Info and you are completly aware that
+													failure to follow these guidelines can result in a permanate
+													ban from the server.
+												</p>
+
+												<p>If so then tap on the join button below to get started.</p>
+												<center>
+													<a href="https://discord.gg/d6jEC8f" id="myBtn"><h3><span>&#10148;</span>Join</h3></a>
+												</center>
+											</div>
+										</div>
+										<script src="./Scripts/Funtions.js"></script>
+								</div>
+							</div>
+							
+						  
+							<hr style="width:50%;">
+								<h3>or</h3>
+							<hr style="width:50%;">
+							<h2>Guild Sign-Up</h2>
+							<p>Join our creative guild for sweet deals and amazing rewards</p>
+							<hr>
+							<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf6FA24BtB0jK2gWsf4dy7aXcDuxL7fuZEPNpsFcE419jeOig/viewform?embedded=true" width="100%" height="400px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                             </center>
 						</div>
 					<button class="accordion" onclick="">
@@ -142,7 +186,7 @@
 							<div>
 									<h2>Join the Guild</h2>
 									<p>There are many perks to being a part of our creative guild. so what are you waiting for.</p>
-								<a href="#" onclick="openSide()">Join!!!</a>
+								<a  href="#" onclick="openSide()">Join!!!</a>
 							</div>
 					        </div>
 						</div>
@@ -238,6 +282,8 @@ document.getElementById("defaultOpen").click();
 					document.getElementById("main").style.marginRight = "0";
 					document.body.style.backgroundColor = "white";
 				}
+
+
 			</script>
 		</div>
 

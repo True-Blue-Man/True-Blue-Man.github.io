@@ -25,7 +25,6 @@
 /* When you mouse over the navigation links, change their color */
 .sidebar a:hover {
 	color: skyblue;
-	border-bottom: 2px solid aqua;
 	box-shadow: 4px 4px 8px #222, 0 0 25px #111, 0 0 5px #333;
 	transition: 0.3s;
 }

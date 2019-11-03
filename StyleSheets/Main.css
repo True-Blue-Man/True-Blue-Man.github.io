@@ -150,6 +150,7 @@ html {
 	font-weight: bold;
 	color:#999;
 }
+
 .Preview {
 	display:table;
 	padding: 75px 20px;
@@ -285,6 +286,7 @@ h3 {
 	overflow: hidden;
 	justify-items: top;
 	align-items: top;
+	width: screen;
 }
 #navbar a.active {
 	display: none;
@@ -470,7 +472,9 @@ transition:0.25s;
 	box-shadow: 4px 4px 8px #222, 0 0 25px #111, 0 0 5px #333;
 	transition:0.25s;
 }
-
+iframe{
+	background-image: linear-gradient(120deg, rgb(0, 132, 255),violet);
+}
 
 @keyframes bounce
 {
@@ -488,6 +492,7 @@ transition:0.25s;
 {
 display: none;
 }
+
 @media screen and (max-width: 1080px) {
 	h1 {
 		font-weight: 900;
@@ -497,7 +502,11 @@ display: none;
 		margin: 12.5% 0%;
 		color: whitesmoke;
 	}
-
+/* Page content */
+.content {
+	padding: 0px;
+	transition: 0.5s;
+}
 	#navbar a.link {
 		display: none;
 		color: #f2f2f2;
@@ -588,7 +597,6 @@ display: none;
 		width: 100%;
 		height: 100%;
 		margin: 0;
-		padding: 8px;
 		font-family: Arial;
 		scroll-behavior: smooth;
 	}

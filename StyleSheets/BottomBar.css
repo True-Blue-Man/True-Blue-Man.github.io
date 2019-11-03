@@ -1,0 +1,61 @@
+/* The bottom navigation menu */
+.bottombar {
+    height: 0px;
+    /* 100% Full-height */
+    width: 100%;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 3;
+    /* Stay on top */
+    bottom: -64px;
+    right: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the bottomnav */
+}
+
+/* The navigation menu links */
+.bottombar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.bottombar a:hover {
+    color: skyblue;
+    box-shadow: 4px 4px 8px #222, 0 0 25px #111, 0 0 5px #333;
+    transition: 0.3s;
+}
+
+/* Position and style the close button (top right corner) */
+.bottombar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 16px;
+    font-size: 32px;
+    margin-left: 50px;
+}
+
+.bottombar .title {
+    position: absolute;
+    top: 0;
+    left: -32px;
+    font-size: 125%;
+    margin-right: -50px;
+}
+
+.bottombar iframe {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+}
