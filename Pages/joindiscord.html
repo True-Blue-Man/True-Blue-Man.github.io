@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+		<title>TrueBlueHub</title>
+		<meta name="description" content="Home of the TrueBlueNation" />
+		<meta name="author" content="Diante Littles" />
+		<link rel="stylesheet" href="../StyleSheets/Main.css" />
+		<link rel="stylesheet" href="../StyleSheets/Accordion.css" />
+		<link rel="stylesheet" href="../StyleSheets/ModalStyles.css" />
+		<link rel="stylesheet" href="../StyleSheets/ScrollElements.css" />
+        <link rel="stylesheet" href="../StyleSheets/Table.css" />
+        <link rel="stylesheet" href="../StyleSheets/TitleCard.css" />
+		<link rel="stylesheet" href="./Personal.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link
+			rel="shortcut icon"
+			type="image/x-icon"
+			href="../ImageDir/TBH_icon.png"
+		/>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style></style>
+		<script src="./Scripts/CookieTest.js"></script>
+	</head>
+	<body>
+		<div id="navbar">
+			<a href="../Community.html" class="link"
+				><i class="fa fa-undo"></i> Back to Community</a
+			>
+		</div>
+		<div class="Table">
+			<div class="TitleCard ">
+				<center>
+					<h2>Attention</h2>
+                    <img src="../ImageDir/Discord_icon.png" width="25%" alt="" />
+                    <h3>Discord Gateway is About to Open</h3>
+				</center>
+				<p>
+					You are about to leave the site and enter our discord server. By doing
+					so you are acknowleging that you have read the Community Rules & Info
+					and you are completly aware that failure to follow these guidelines
+					can result in a permanate ban from the server.
+				</p>
+
+				<center>
+                    <p>If so then tap on the join button below to get started.</p>
+                    
+                    
+					<a href="https://discord.gg/hme3jtr" target="blank"
+						><span>&#10148;</span>Join</a
+					>
+				</center>
+			</div>
+		</div>
+		<script>
+			//for accordion
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+			for (i = 0; i < acc.length; i++) {
+				acc[i].addEventListener("click", function() {
+					this.classList.toggle("Active");
+					var panel = this.nextElementSibling;
+					if (panel.style.maxHeight > "0vh") {
+						panel.style.maxHeight = "0vh";
+					} else {
+						panel.style.maxHeight = panel.scrollHeight + "vh";
+					}
+				});
+			}
+		</script>
+		<script>
+			window.onscroll = function() {
+				myFunction();
+			};
+
+			var Browser = document.getElementsByClassName("Browser");
+			var sBrowser = Browser.offsetTop;
+			sBrowser = "100px";
+			var navbar = document.getElementById("navbar");
+			var sticky = navbar.offsetTop;
+
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "250px";
+				document.getElementById("main").style.marginLeft = "250px";
+				document.body.style.backgroundColor = "rgb(0,0,0,0.4)";
+			}
+
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+				document.getElementById("main").style.marginLeft = "0";
+				document.body.style.backgroundColor = "white";
+			}
+
+			function myFunction() {
+				if (window.pageYOffset >= sticky) {
+					navbar.classList.add("sticky");
+				} else {
+					navbar.classList.remove("sticky");
+				}
+			}
+
+			function openTab(pageName, elmnt, color) {
+				var i, tabcontent, tablinks;
+				tabcontent = document.getElementsByClassName("tabcontent");
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+				}
+				tablinks = document.getElementsByClassName("tablink");
+				for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].style.backgroundColor = "";
+				}
+				document.getElementById(pageName).style.display = "block";
+				elmnt.style.backgroundColor = color;
+			}
+
+			// Get the element with id="defaultOpen" and click on it
+			document.getElementById("defaultOpen").click();
+
+			function openSide() {
+				document.getElementById("mySideBar").style.width = "100%";
+				document.getElementById("main").style.marginLeft = "100%";
+				document.body.style.backgroundColor = "rgb(0,0,0,0.4)";
+			}
+
+			function closeSide() {
+				document.getElementById("mySideBar").style.width = "0";
+				document.getElementById("main").style.marginLeft = "0";
+				document.body.style.backgroundColor = "white";
+			}
+		</script>
+	</body>
+</html>

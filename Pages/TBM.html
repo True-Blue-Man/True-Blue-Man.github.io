@@ -60,11 +60,6 @@
 			</div>
 		</div>
 		<div id="navbar">
-				<a href="#" class="active" onclick="openNav()"><i class="fa fa-bars"></i></a>
-				<b><img src="../ImageDir/TBH_icon.png" width="32vw">TrueBlueHub</img></b>
-				<s href="javascript:void(0)"
-					><i class="fa fa-search"></i> Search Currently is Offline.
-				</s>
 				<a href="../Community.html" class="link"><i class="fa fa-undo"></i> Back to Community</a>
 		</div>
 		
@@ -83,10 +78,10 @@
 
 
 			<div class="Content">
-					<button class="tablink" onclick="openPage('Twitter' , this, 'rgb(0, 132, 255)')" id="defaultOpen" style="width: 25%;"><i class="fa fa-twitter"></i></button>
-					<button class="tablink" onclick="openPage('SoundCloud', this, 'rgb(0, 132, 255)')" style="width: 25%;"><i class="fa fa-soundcloud"></i></button>
-					<button class="tablink" onclick="openPage('YouTube', this, 'rgb(0, 132, 255)')" style="width: 25%;"><i class="fa fa-youtube-play"></i></button>
-					<button class="tablink" onclick="openPage('Contact', this, 'rgb(0, 132, 255)')" style="width: 25%;"><i class="fa fa-envelope"></i></button>
+					<button class="tablink" onclick="openTab('Twitter' , this, 'rgb(0, 132, 255)')" id="defaultOpen" style="width: 25%;"><i class="fa fa-twitter"></i></button>
+					<button class="tablink" onclick="openTab('SoundCloud', this, 'rgb(0, 132, 255)')" style="width: 25%;"><i class="fa fa-soundcloud"></i></button>
+					<button class="tablink" onclick="openTab('YouTube', this, 'rgb(0, 132, 255)')" style="width: 25%;"><i class="fa fa-youtube-play"></i></button>
+					<button class="tablink" onclick="openTab('Contact', this, 'rgb(0, 132, 255)')" style="width: 25%;"><i class="fa fa-envelope"></i></button>
 				
 					<div id="Twitter" class="tabcontent">
 							<h2>Twitter</h2>
@@ -130,23 +125,9 @@
 			<a href="#"><i class="fa fa-deviantart"></i> Deviant Art</a>
 		</div>
 
-		<script>
-			//for accordion
-			var acc = document.getElementsByClassName("accordion");
-			var i;
-			for (i = 0; i < acc.length; i++) {
-				acc[i].addEventListener("click", function() {
-					this.classList.toggle("Active");
-					var panel = this.nextElementSibling;
-					if (panel.style.maxHeight > "0vh") {
-						panel.style.maxHeight = "0vh";
-					} else {
-						panel.style.maxHeight = panel.scrollHeight + "vh";
-					}
-				});
-			}
+		<script src="../Scripts/accordion.js">
 		</script>
-		<script>
+		<script src="../Scripts/app.js">
 			window.onscroll = function() {
 				myFunction();
 						
@@ -180,7 +161,7 @@
 				}			
 			}
 
-			function openPage(pageName, elmnt, color) {
+			function openTab(pageName, elmnt, color) {
 				var i, tabcontent, tablinks;
 				tabcontent = document.getElementsByClassName("tabcontent");
 				for (i = 0; i < tabcontent.length; i++) {

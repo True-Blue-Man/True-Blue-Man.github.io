@@ -1,418 +1,428 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Services</title>
-		<meta name="description" content="Preview and Order custom services for all your needs." />
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+		<title>TrueBlueHub</title>
+		<meta
+			name="description"
+			content="Welcome to TrueBlueHub, A Better Way to Connect Developers and Buisiness to Clients and Consumers. "
+		/>
 		<meta name="author" content="Diante Littles" />
+		<!---->
 		<link rel="stylesheet" href="./StyleSheets/Main.css" />
-		<link rel="stylesheet" href="./StyleSheets/Accordion.css" />
+		<link rel="stylesheet" href="./StyleSheets/TextStyles.css" />
 		<link rel="stylesheet" href="./StyleSheets/ScrollElements.css" />
+		<link rel="stylesheet" href="./StyleSheets/ModalStyles.css" />
 		<link rel="stylesheet" href="./StyleSheets/SideBar.css" />
-		<link rel="stylesheet" href="./StyleSheets/BottomBar.css" />
-		<link rel="stylesheet" href="./StyleSheets/Table.css">
-		<link rel="stylesheet" href="./StyleSheets/ModalStyles.css">
+		<link rel="stylesheet" href="./StyleSheets/Table.css" />
+		<link rel="stylesheet" href="./StyleSheets/Contact.css" />
+		<link rel="stylesheet" href="./StyleSheets/Accordion.css" />
 		<link
-		rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-	/>
-		<link rel="stylesheet" href="./StyleSheets/SmartPhone.css" />		
-		<link rel="stylesheet" href="./StyleSheets/Tablet.css" />
-		<link rel="stylesheet" href="./StyleSheets/Pc.css" />
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
 		<link
 			rel="shortcut icon"
 			type="image/x-icon"
 			href="./ImageDir/TBH_icon.png"
 		/>
+
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<style></style>
+		<script src="./Scripts/CookieTest.js"></script>
 	</head>
-
-	<body >
-		<div id="mySidenav" class="sidenav">
-			<a href="index.html" class="title">
-				<img
-					src="./ImageDir/TBH_icon.png"
-					style="align-self: auto;"
-					width="32px"
-					height="32px"
-					alt="HomePage"
-				/>TrueBlueHub</a
-			>
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-				>&otimes;</a
-			>
-			<a href="index.html"
-				><i class="fa fa-home"></i> Home</a
-			>
-			<a href="Dashboard.html"
-			><i class="fa fa-dashboard"></i> Dashboard</a
-		>
-		<a href="Downloads.html"
-			><i class="fa fa-download"></i> Downloads</a
-		>
-		<a href="Products.html"
-			><i class="fa fa-product-hunt"></i> Products</a
-		>
-		<a href="Community.html"
-			><i class="fa fa-user"></i> Community</a
-		>
-		<a href="Support.html"
-			><i class="fa fa-send"></i> Support</a
-		>
+	<body>
+		<div class="Header">
+			<center>
+				<div
+					class="parallax"
+					style="background-image: url(./ImageDir/Services_Banner.png); "
+				>
+					<h1>Services</h1>
+					<h2>All your Software needs in one place.</h2>
+					<p>Scroll down to see the services we offer.</p>
+					<hr />
+				</div>
+			</center>
 		</div>
-
-		<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-		<div id="main">
-
-			<div id="navbar">
-				<a href="#" class="active" onclick="openNav()"><i class="fa fa-bars"></i></a>
-				<b><img src="./ImageDir/TBH_icon.png" width="32vw">TrueBlueHub</img></b>
-				<s href="javascript:void(0)"
-					><i class="fa fa-search"></i> Search Currently is Offline.
-				</s>
-				<a href="Support.html" class="link"><i class="fa fa-support"></i> Support</a>
-				<a href="Community.html" class="link"><i class="fa fa-user"></i> Community</a>
-				<g><i class="fa fa-tasks"></i> Services</g>
-				<a href="Products.html" class="link"><i class="fa fa-product-hunt"></i> Products</a>
-				<a href="Downloads.html" class="link"><i class="fa fa-download"></i> Downloads</a>
-				<a href="Dashboard.html" class="link"><i class="fa fa-dashboard"></i> Dashboard</a>
-				<a href="index.html" class="link"><i class="fa fa-home"></i> Home</a>
-			</div>
-
-			<div class="parallax">
-				<center><h1>Services</h1>
-				<h2>All your Software needs in one place.</h2>
-				<p>Scroll down to see the services we offer.</p>
-				</center>
-			
-		</div>
-			<div style="clear:both">
-				<div id="mySideBar" class="sidebar">
-					<a href="#" class="title">
-							<img
-								src="./ImageDir/TBH_icon.png"
-								style="align-self: auto;"
-								width="32px"
-								height="32px"
-								alt="HomePage"
-							/>ServiceOrder</a
-						>
-				<a href="javascript:void(0)" class="closebtn" onclick="closeSide()"
-				>&otimes;</a>
-				<iframe src="./Pages/Order.html" frameborder="0" width="100%" height="100%"></iframe> 
-			</div>
-
-			<div id="myBottomBar" class="bottombar">
+		<div class="Main">
+			<div id="mySideBar" class="sidebar">
 				<a href="#" class="title">
-						<img
-							src="./ImageDir/TBH_icon.png"
-							style="align-self: auto;"
-							width="32px"
-							height="32px"
-							alt="HomePage"
-						/>ServiceOrder</a
-					>
-			<a href="javascript:void(0)" class="closebtn" onclick="closeBottom()"
-			>&otimes;</a>
-			<iframe src="./Pages/AboutSoftwareDev.html" frameborder="0" width="100%" height="100%"></iframe> 
-		</div>
+					<img
+						src="./ImageDir/TBH_icon.png"
+						style="align-self: auto;"
+						width="32px"
+						height="32px"
+						alt="HomePage"
+					/>ServiceOrder</a
+				>
+				<a href="javascript:void(0)" class="closebtn" onclick="closeSide()"
+					>&otimes;</a
+				>
+				<iframe
+					src="./Pages/Order.html"
+					frameborder="0"
+					width="100%"
+					height="100%"
+				></iframe>
+			</div>
+			<button
+				class="tablink"
+				onclick="openTab('Web' , this, 'rgb(0, 64, 100)')"
+				id="defaultOpen"
+				style="width: 50%;"
+			>
+				<i class="fa fa-superpowers"></i> 
+				 WebDevelopment
+			</button>
+			<button
+				class="tablink"
+				onclick="openTab('Software' , this, 'rgb(0, 64, 100)')"
+				id="defaultOpen"
+				style="width: 50%;"
+			>
+				<i class="fa fa-windows"></i>
+				SoftwareDevelopment
+			</button>
+			<div id="Web" class="tabcontent">
 				<div class="WebDesign">
 					<h2>Custom Web Development</h2>
-					
+
 					<p>
-						We can design custom, responsive, and multifunctional websites for you. These services range from Custom Front End Design, to Full End WebApp Development.
+						We can design custom, responsive, and multifunctional websites for
+						you. These services range from Custom Front End Design, to Full End
+						WebApp Development.
 					</p>
-					
 				</div>
-			</div>			
-<h2>Available Packages</h2>
-<h5>
-	All prices are negotiable.
-</h5>			
-<div class="Table">
-<link rel="stylesheet" href="./StyleSheets/TitleCard.css" />
-<div class="TitleCard">
-<h2 class="TitleText">
-	Personal
-</h2>
-<h3 class="TitleText">Prices starting at <span style="color: limegreen; text-shadow: 4px 4px 8px #222, 0 0 25px #111, 0 0 5px #333;">$20.00 USD</span></h3>
-<h4>Package#1</h4>
-<ul>
-	<li>Up to 5 pages included <p>(<span style="color: limegreen; text-shadow: 4px 4px 8px #222, 0 0 25px #111, 0 0 5px #333;">$5.00 USD</span> per any extra pages)</p></li>
-	<li>Custom Designs and features to spice up your site. </li>
-	<li>Social Integrations to boost reputation.</li>
-</ul>
-<center><a href="#" onclick="openSide()"><span>&#10148;</span>Order Now!!!</a></center>
-</div>
 
-<div class="TitleCard">
-<h2 class="TitleText">
-	Community
-</h2>
-<h3 class="TitleText">Prices starting at <span style="color: limegreen; text-shadow: 4px 4px 8px #222, 0 0 25px #111, 0 0 5px #333;">$100.00 USD</span></h3>
-<h4>Package#2</h4>
-<ul>
-		<li>Custom Bot Development <p>(For Discord or other Social Media)</p></li>
-		<li> Promotional Services. <p>(<span style="color: limegreen; text-shadow: 4px 4px 8px #222, 0 0 25px #111, 0 0 5px #333;">$10.00 USD</span> per month)</p></li>	
-	<li>Up to 10 pages included <p>(<span style="color: limegreen; text-shadow: 4px 4px 8px #222, 0 0 25px #111, 0 0 5px #333;">$5.00 USD</span> per any extra pages)</p></li>
-		<li>Custom Host Deployment (additional charges may apply depending on the host)</li>
-</ul>
-<center><a href="#" onclick="openSide()"><span>&#10148;</span>Order Now!!!</a></center>
-</div>
+				<h2>Available Packages</h2>
+				<h5>
+					All prices are negotiable.
+				</h5>
+				<div class="Table">
+					<link rel="stylesheet" href="./StyleSheets/TitleCard.css" />
 
-<div class="TitleCard">
-	<h2 class="TitleText">
-	Business
-	</h2>
-	<h3 class="TitleText">Prices starting at <span style="color: limegreen; text-shadow: 4px 4px 8px #222, 0 0 25px #111, 0 0 5px #333;">$500.00 USD</span></h3>
-	<h4>Package#3</h4>
-	<ul>
-			<li> Promotional Services.<p>(<span style="color: limegreen; text-shadow: 4px 4px 8px #222, 0 0 25px #111, 0 0 5px #333;">$10.00 USD</span> per month)</p></li>
-			<li>Full Social Package <p>(Including a Promotional Discord Server and Bot)</p></li>
-			<li>Order, Purchase, and Support Forms</li>	
-		<li>Unlimited Pages</li>
-			<li>Account Systems and Support</li>
-	</ul>
-	<center><a href="#" onclick="openSide()"><span>&#10148;</span>Order Now!!!</a></center>
-	</div>
-	
-</div>
-
-			<div class="Unsizer">
-				<h3>Web Preview not available in Mobile Edition.</h3>
-			</div> 
-           <div class=Sizer>
-				<button class="accordion" onclick="">
-						<h2>Website Preview</h2>
-					</button>
-					<div class="panel">
-			<button class="tablink" onclick="openPage('Phone' , this, 'rgb(0, 132, 255)')" style="width: 33.3%;"><i class="fa fa-mobile-phone"></i></button>                      
-			<button class="tablink" onclick="openPage('Pc', this, 'rgb(0, 132, 255)')" id="defaultOpen" style="width: 33.3%;"><i class="fa fa-laptop"></i></button>
-            <button class="tablink" onclick="openPage('Tablet', this, 'rgb(0, 132, 255)')" style="width: 33.3%;"><i class="fa fa-tablet"></i></button>
-			
-			
-			 <div id="Phone" class="tabcontent">
-				<h2>Moblie Phone Preview</h2>
-				<div class="Preview" >
-					<p>As you can see, we design our websites with compatability in mind. This means anyone can view your site from almost any device.</p>
-				<div class="smartphone">
-					<div class=content>
-						<iframe src="./Pages/ExampleSite.html" frameborder="0" width="100%" height="100%"></iframe>
-					</div>
-				</div>
-			</div>
-			 </div>
-			 <div id="Pc" class="tabcontent">
-					<h2>PC Preview</h2>
-					<p>This is the Pc Example. This one was scaled down to due to size constraints however it is clearly functional. if you are viewing this page on mobile then you should be able to get an idea of  how our websites run on PC</p>
-					<div class="Preview">
-						<center>
-					<div class="laptop" >
-							<div class=content>
-								<iframe src="./Pages/ExampleSite.html" frameborder="0" width="100%" height="100%"></iframe>
-							</div>
-					</div>
-					</center>
-				</div>
-			 </div>
-			 <div id="Tablet" class="tabcontent">
-					<div class="tablet">
-							<div class=content>
-								<p>hi</p>
-							</div>
-						</div>
-					</div>
-			 </div>
-		   </div>
-			 <div style="clear:both">
-					<div class="WebDesign">
-						<h2>Custom App Development</h2>
-						
-						<p>
-							We'll create any application for any purpose. Custom built to fit your needs.
-						</p>
-						<div class="Table">
-							<div>
-								<h2>Prices</h2>
-								<h3>Labor</h3>
-								<p>The general labor Fee is <span style="color: limegreen;">$20.00 USD</span> this covers the expense of us assembling your software.</p>
-								<h3>Features</h3>
-								<p>Additional features may vary in price however each feature is never more than <span style="color: limegreen;">$5.00 USD</span></p>
-								<a href="#" onclick="openSide()"><span>&#10148;</span>Make My Software!!!</a>
-							</div>
-
-							<div>
-								<h2>Features</h2>
-								<p>Additional features can be listed as follows</p>
-								<ul>
-									<li>Media Players</li>
-									<li>File Systems</li>
-									<li>Security Systems</li>
-									<li>Presentation and Media Creation</li>
-									<li>Local End Communications (For Terminals or Interconnected PCs)</li>
-									<li>Remote Commmunications (For Secure Internet Communications)</li>
-								</ul>
-								<a href="#" onclick="openBottom()" id="myBtn"><span>&#10148;</span>View More!!!</a>
-							</div>
-							<div>
-									<h2>Packaging</h2>
-									<h3>Compressed Zipped Folder(.zip)</h3>
-									<p>we can package your software as a .zip file for a simple program that doesn't require high permissions</p>
-									<h3>Installer(.exe) (Recommended)</h3>
-									<p>This will allow you to install all required packages and libraries required to run Our Software</p>
-									<a href="#" onclick="openBottom()" id="myBtn"><span>&#10148;</span>Learn More!!!</a>
-								</div>
-						</div>
-					</div>
-					<div style="clear:both">
-							<div class="WebDesign">
-								<h2>Full Development Package</h2>
-								
+					<div class="TitleCard">
+						<h2 class="TitleText">
+							Personal
+						</h2>
+						<h3 class="TitleText">
+							Prices starting at
+							<span
+								style="color: limegreen; text-shadow: 4px 4px 8px #222, 0 0 25px #111, 0 0 5px #333;"
+								>$20.00 USD</span
+							>
+						</h3>
+						<h4>Package#1</h4>
+						<ul>
+							<li>
+								Up to 5 pages included
 								<p>
-									We will get you Fully set up with everything you need from Webtsites and WebApps to powerful Pc-Applications we will do it all.
+									(<span
+										style="color: limegreen; text-shadow: 4px 4px 8px #222, 0 0 25px #111, 0 0 5px #333;"
+										>$5.00 USD</span
+									>
+									per any extra pages)
 								</p>
-								<div class="Table">
-										<div>
-											<h2>Price</h2>
-											<h3>Full Package</h3>
-											<p>The Price is <span style="color: limegreen;">$1000.00 USD</span> (No Additional Prices) </p>
-											<h3>Features</h3>
-											<p>The price here covers the both software development and web development</p>
-											<a href="#" onclick="openSide()"><span>&#10148;</span>Get Started</a>
-										</div>
-			
-										<div>
-											<h2>Features</h2>
-											<h3>All Included</h3>
-											<ul>
-												<li>Full Software Dashboard.</li>
-												<li>Personal, Community, and Business Class Features.</li>
-												<li>Bots for all Social Integrations.</li>
-												<li>Discord server setup and advertising.</li>
-												<li>1 year guaranteed commitment to your Business, Community, etc. We will work for you!!! Full Support Included.</li>
-												<li>Full End Web Development (with hosting included).</li>
-											</ul>
-											<a href="#" onclick="openBottom()" id="myBtn"><span>&#10148;</span>View More!!!</a>
-										</div>
-										<div>
-												<h2>Deployment</h2>
-												
-												<h3>Software Packages</h3>
-												<p>Any prefered setup packages including (.zip) and (.exe)</p>
-												<h3>Web Hosting and Deployment</h3>
-												<p>Premimum Hosting at any host of your choosing</p>
-												<a href="#" onclick="openBottom()" id="myBtn"><span>&#10148;</span>Learn More!!!</a>
-											</div>
-									</div>
-							</div>
-						</div>	
-				</div>	
+							</li>
+							<li>Custom Designs and features to spice up your site.</li>
+							<li>Social Integrations to boost reputation.</li>
+						</ul>
+						<center>
+							<a href="#" onclick="openSide()"
+								><span>&#10148;</span>Order Now!!!</a
+							>
+						</center>
+					</div>
+
+					<div class="TitleCard">
+						<h2 class="TitleText">
+							Community
+						</h2>
+						<h3 class="TitleText">
+							Prices starting at
+							<span
+								style="color: limegreen; text-shadow: 4px 4px 8px #222, 0 0 25px #111, 0 0 5px #333;"
+								>$75.00 USD</span
+							>
+						</h3>
+						<h4>Package#2</h4>
+						<ul>
+							<li>
+								Custom Bot Development
+								<p>(For Discord or other Social Media)</p>
+							</li>
+							<li>
+								Promotional Services.
+								<p>
+									(<span
+										style="color: limegreen; text-shadow: 4px 4px 8px #222, 0 0 25px #111, 0 0 5px #333;"
+										>$10.00 USD</span
+									>
+									per month)
+								</p>
+							</li>
+							<li>
+								Up to 10 pages included
+								<p>
+									(<span
+										style="color: limegreen; text-shadow: 4px 4px 8px #222, 0 0 25px #111, 0 0 5px #333;"
+										>$5.00 USD</span
+									>
+									per any extra pages)
+								</p>
+							</li>
+							<li>
+								Custom Host Deployment (additional charges may apply depending
+								on the host)
+							</li>
+						</ul>
+						<center>
+							<a href="#" onclick="openSide()"
+								><span>&#10148;</span>Order Now!!!</a
+							>
+						</center>
+					</div>
+
+					<div class="TitleCard">
+						<h2 class="TitleText">
+							Business
+						</h2>
+						<h3 class="TitleText">
+							Prices starting at
+							<span
+								style="color: limegreen; text-shadow: 4px 4px 8px #222, 0 0 25px #111, 0 0 5px #333;"
+								>$300.00 USD</span
+							>
+						</h3>
+						<h4>Package#3</h4>
+						<ul>
+							<li>
+								Promotional Services.
+								<p>
+									(<span
+										style="color: limegreen; text-shadow: 4px 4px 8px #222, 0 0 25px #111, 0 0 5px #333;"
+										>$10.00 USD</span
+									>
+									per month)
+								</p>
+							</li>
+							<li>
+								Full Social Package
+								<p>(Including a Promotional Discord Server and Bot)</p>
+							</li>
+							<li>Order, Purchase, and Support Forms</li>
+							<li>Unlimited Pages</li>
+							<li>Account Systems and Support</li>
+						</ul>
+						<center>
+							<a href="#" onclick="openSide()"
+								><span>&#10148;</span>Order Now!!!</a
+							>
+						</center>
+					</div>
 				</div>
-<script>
-		//for accordion
-		var acc = document.getElementsByClassName("accordion");
-		var i;
-		for (i = 0; i < acc.length; i++) {
-			acc[i].addEventListener("click", function() {
-				this.classList.toggle("Active");
-				var panel = this.nextElementSibling;
-				if (panel.style.maxHeight > "0vh") {
-					panel.style.maxHeight = "0vh";
-				} else {
-					panel.style.maxHeight = panel.scrollHeight + "vh";
-				}
-			});
-		}
-	</script>
+			</div>
+			<div id="Software" class="tabcontent">
+				<h2>Custom Software Development</h2>
+				<p>
+					Our Custom Software can do anything, Thanks to its powerful abilities,
+					we can bring you extensive functionality that few others can compare
+					to.
+				</p>
+				<h5>
+					All prices are negotiable.
+				</h5>
+				<div class="Table">
+					<div>
+						<h2>Prices</h2>
+
+						<p>
+							Our upfront assembly price is
+							<span style="color: lime;">$20.00</span>USD.
+						</p>
+						<p>Additional prices may vary per each added feature.</p>
+						<p>
+							It will cost you nothing to place an order. However after placing
+							your order you will be sent a confirmation email. In that email
+							you will be sent an invoice. Once you have payed the requested
+							amount you will be given a link to download your new software.
+						</p>
+					</div>
+					<div>
+						<h2>Features</h2>
+						<button class="accordion" onclick="">
+							<h2>Media</h2>
+						</button>
+						<div class="panel">
+							<p>
+								We can include an omni-funtional media player into your
+								software. This Player would be capable of playing Music, Videos,
+								and Flash Files. We can include this feature for only
+								<span style="color: lime;">$10.00</span>
+								<center>
+										<a href="#" onclick="openSide()"
+								><span>&#10148;</span>Order Now!!!</a
+								>
+								</center>
+							</p>
+						</div>
+
+						<button class="accordion" onclick="">
+							<h2>Presentation</h2>
+						</button>
+						<div class="panel">
+							<p>
+								This feature will allow you to create any type of presentational
+								file, from a Slide shows to Charts to Text Documents. This would
+								make it perfect for work or school. This feature would only cost
+								<span style="color: lime;">$5.00</span>
+								<center>
+										<a href="#" onclick="openSide()"
+								><span>&#10148;</span>Order Now!!!</a
+								>
+								</center>
+							</p>
+						</div>
+
+						<button class="accordion" onclick="">
+							<h2>Marketing and Business solutions</h2>
+						</button>
+						<div class="panel">
+							<p>
+								This Feature not only includes presentation but also includes
+								specialized algorithoms to track efficiency. You can also use
+								this software predict market demographics by pluging in survey
+								data and so much more. All for just
+								<span style="color: lime;">$50.00</span>
+								<center>
+										<a href="#" onclick="openSide()"
+								><span>&#10148;</span>Order Now!!!</a
+								>
+								</center>
+							</p>
+						</div>
+						<button class="accordion" onclick="">
+							<h2>Gaming</h2>
+						</button>
+						<div class="panel">
+							<p>
+								This includes a game launcher for your pc games, a joystick
+								mapper to map keys to conrtollers, A.I. game bots for two player
+								controls. and preinstalled Game Emulators. It only costs
+								<span style="color: lime;">$15.00</span>
+							</p>
+							<center>
+									<a href="#" onclick="openSide()"
+							><span>&#10148;</span>Order Now!!!</a
+							>
+							</center>
+						</div>
+
+						<button class="accordion" onclick="">
+							<h2>Security & Encryption</h2>
+						</button>
+						<div class="panel">
+							<p>
+								AutoDetect malicious processes that your AntiViral software
+								might miss. you can also lock your files into an encrypted file
+								package that only our software can break. This will cost
+								<span style="color: lime;">$20.00</span>
+							</p>
+							<center>
+									<a href="#" onclick="openSide()"
+							><span>&#10148;</span>Order Now!!!</a
+							>
+							</center>
+						</div>
+						<button class="accordion" onclick="">
+							<h2>Communication, and WebSolutions</h2>
+						</button>
+						<div class="panel">
+							<p>
+								Want you communicate with your team or friends securely, or
+								launch web based bots/applications? you could easily do so with
+								this feature. All for just
+								<span style="color: lime;">$10.00</span>
+							</p>
+							<center>
+									<a href="#" onclick="openSide()"
+							><span>&#10148;</span>Order Now!!!</a
+							>
+							</center>
+						</div>
+						<button class="accordion" onclick="">
+							<h2>File System & Automation</h2>
+						</button>
+						<div class="panel">
+						<p>
+							Manage your files with this powerful tool and schedule tasks to
+							stay on track for <span style="color: lime;">$20.00</span>
+						</p>
+						<center>
+								<a href="#" onclick="openSide()"
+						><span>&#10148;</span>Order Now!!!</a
+						>
+						</center>
+						</div>
+						<button class="accordion" onclick="">
+							<h2>Full Dashboard</h2>
+						</button>
+						<div class="panel">
+						<p>
+							If you want all of the features mentioned above it will cost
+							<span style="color: lime;">$100.00</span>
+						</p>
+						<p>
+							However our most valuable package is our "Full Package". it
+							includes everything we can offer for
+							<span style="color: lime;">$750.00</span> but only for a limited
+							time.
+						</p> 
+						<center>
+								<a href="#" onclick="openSide()"
+						><span>&#10148;</span>Order Now!!!</a
+						>
+						</center>
+								
+					</div>
+
+					</div>
+				</div>
+			</div>
+			<script src="./Scripts/app.js"></script>
+			<script src="./Scripts/accordion.js"></script>
 			<script>
-				window.onscroll = function() {
-					myFunction();
-				};
+				// Set the date we're counting down to
+				var countDownDate = new Date("Nov 22, 2019 12:00:00").getTime();
 
-				var navbar = document.getElementById("navbar");
-				var sticky = navbar.offsetTop;
+				// Update the count down every 1 second
+				var countdownfunction = setInterval(function() {
+					// Get todays date and time
+					var now = new Date().getTime();
 
-				function openNav() {
-					document.getElementById("mySidenav").style.width = "250px";
-					document.getElementById("main").style.marginLeft = "250px";
-					document.body.style.backgroundColor = "rgb(0,0,0,0.4)";
-				}
+					// Find the distance between now an the count down date
+					var distance = countDownDate - now;
 
-				function closeNav() {
-					document.getElementById("mySidenav").style.width = "0";
-					document.getElementById("main").style.marginLeft = "0";
-					document.body.style.backgroundColor = "white";
-				}
+					// Time calculations for days, hours, minutes and seconds
+					var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+					var hours = Math.floor(
+						(distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+					);
+					var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+					var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-				function myFunction() {
-					if (window.pageYOffset >= sticky) {
-						navbar.classList.add("sticky");
-					} else {
-						navbar.classList.remove("sticky");
+					// Output the result in an element with id="demo"
+					document.getElementById("demo").innerHTML =
+						days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+					// If the count down is over, write some text
+					if (distance < 0) {
+						clearInterval(countdownfunction);
+						document.getElementById("demo").innerHTML = "EXPIRED";
 					}
-				}
-
-              function openPage(pageName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-
-
-function openSide() {
-					document.getElementById("mySideBar").style.width = "100%";
-					document.getElementById("main").style.marginRight = "100%";
-					document.getElementById("main").style.overflowY = "hidden";
-					document.body.style.backgroundColor = "rgb(0,0,0,0.4)";
-				}
-
-				function closeSide() {
-					document.getElementById("mySideBar").style.width = "0";
-					document.getElementById("main").style.marginRight = "0";
-					document.getElementById("main").style.overflowY = "auto";
-					document.body.style.backgroundColor = "white";
-				}
-				function openBottom() {
-					document.getElementById("myBottomBar").style.height = "100%";
-					document.getElementById("main").style.marginBottom = "100%";
-					document.getElementById("myBottomBar").style.bottom = "0";
-					document.body.style.backgroundColor = "rgb(0,0,0,0.4)";
-				}
-
-				function closeBottom() {
-					document.getElementById("myBottomBar").style.height = "0";
-					document.getElementById("main").style.marginBottom = "0";
-					document.getElementById("myBottomBar").style.bottom = "-64px";
-					document.body.style.backgroundColor = "white";
-				}				
+				}, 1000);
 			</script>
-		
-		<div id="footer">
-			<div style="color: aqua; font-size: 18px;">&copy; 2019 TrueBlueHub & TrueBlueMan(Diante Littles).</div>
-			
-			<div style="text-align:right;">
-			<a href="#"><i class="fa fa-twitter"></i> Twitter</a>
-			<a href="#"><i class="fa fa-youtube-play"></i> YouTube</a>
-			<a href="#"><i class="fa fa-soundcloud"></i> SoundCloud</a>
-			<a href="#"><i class="fa fa-comment"></i> Discord</a>
-			<a href="#"><i class="fa fa-deviantart"></i> Deviant Art</a>
-			</div>
-			
-			
-			
-			</div>
-		<!--<h1 style="color:aqua;" margin-left:15px >My First WebPage</h1>-->
-	</div>
+		</div>
 	</body>
 </html>

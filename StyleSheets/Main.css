@@ -8,27 +8,126 @@ background-image: linear-gradient(45deg, #222, #333, #444);
 }
 body,
 html {
+	background-color: #111;
 	width: 100%;
 	height: 100%;
-	margin: 0;
+	margin: 0%;
 	font-family: Arial;
 	scroll-behavior: smooth;
 }
-
-
-/*List-grid view*/
-/* Create two equal columns that floats next to each other */
-.column {
-	float: left;
-	width: 50%;
-	padding: 10px;
+/* Set default styles for tab content */
+.linkcontent {
+	display: none;
+	position: relative;
+	animation-name: fade;
+	animation-duration: 2s;
+	-webkit-animation-name: fade;
+	/* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 2s;
+	/* Safari 4.0 - 8.0 */
+}
+.Main
+{
+	height:100%;
+}
+/* Style each tab content individually */
+#Home .Header {
+	background-color: #fff;
+	color: #333;
+	text-align: center;
+	padding:0px;
 }
 
-/* Clear floats after the columns */
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
+#Home .Main {
+	/*background-color: #999;*/
+	color: whitesmoke;
+	text-align: center;
+}
+
+
+#Dashboard .Header {
+	background-color: #fff;
+	color: #333;
+	text-align: center;
+}
+
+#Dashboard .Main {
+	color: #111;
+	padding: 50px;
+	text-align: left;
+}
+
+#Downloads .Header {
+	background-color: #fff;
+	color: #333;
+	text-align: center;
+}
+
+#Downloads .Main {
+	color: #111;
+	text-align: left;
+}
+#Products .Header {
+	background-color: #fff;
+	color: #333;
+	text-align: center;
+}
+
+#Products .Main {
+	color: #111;
+	text-align: left;
+}
+
+#Services .Header {
+	background-color: #fff;
+	color: #333;
+	text-align: center;
+	align-content: center;
+}
+
+#Services .Main {
+	color: #111;
+	text-align: left;
+}
+
+#Community .Header {
+	background-color: #fff;
+	color: #333;
+	text-align: center;
+}
+
+#Community .Main {
+	color: #111;
+	padding: 50px;
+	text-align: left;
+}
+#Support .Header {
+	background-color: #fff;
+	color: #333;
+	text-align: center;
+}
+
+#Support .Main {
+	color: #111;
+	text-align: left;
+}
+
+/* Style tab links */
+.link {
+	color: white;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	font-size: 17px;
+	transition: 0.5s;
+}
+
+.link:hover {
+	color:rgb(0, 132, 255);
+	border-bottom: 6px solid aqua;
+	transition: 0.5s;
 }
 
 /* Style tab links */
@@ -69,7 +168,7 @@ html {
 	display: none;
 	padding: 75px 20px;
 	width:auto;
-	height: 100%;
+	height: auto;
 }
 
 #Twitter {
@@ -88,33 +187,26 @@ html {
 	background-color: rgb(0, 132, 255);
 }
 
-
-
-
-
-
-#Phone
+#Base
 {
-	background-color: rgb(0, 132, 255);
+	background-color: rgb(0, 132, 255);	
 }
-#Tablet
+#Art
 {
-	background-color: rgb(0, 132, 255);
+	background-color: rgb(0, 132, 255);	
 }
-#Pc
-{
-	background-color: rgb(0, 132, 255);
-}
-
-
 #Directory
 {
 	background-color: rgb(0, 132, 255);	
 }
 
-#Home
+#Web
 {
-	background-color: rgb(0, 132, 255);	
+	background-color: rgb(0, 64, 100);	
+}
+#Software
+{
+	background-color: rgb(0, 64, 100);	
 }
 
 #MusicProducers
@@ -165,50 +257,34 @@ html {
 	/* Full height */
 	height: 100%;
 
-	padding: 0px;
+	padding-top: 16px;
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
-	background-position: center;
+	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
 
 	text-shadow: 4px 4px 8px #222, 0 0 25px #111, 0 0 5px #333;
+	color:lightblue;
 }
-.ml3 {
-	font-weight: 900;
-	position: absolute;
-	top: 67.5%;
-	left: 50%;
-	transform: translate(-50%, -75%);
-}
-h1 {
-	font-weight: 900;
-	top: 67.5%;
-	left: 50%;
-	font-size: 4vw;
-	margin: 6.125% 0%;
-	color: whitesmoke;
-}
-p {
-	color: darkgrey;
+/*p {
 	font-weight: 225;
 	width: 100%;
 	font-size: 125%;
 	animation-name: fade;
 	animation-duration: 4s;
-	-webkit-animation-name: fade; /* Safari 4.0 - 8.0 */
-	-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 4s;
 }
 li {
 	color: darkgray;
-
 	font-weight: 225;
 	font-size: 125%;
 	animation-name: fade;
 	animation-duration: 4s;
-	-webkit-animation-name: fade; /* Safari 4.0 - 8.0 */
-	-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-}
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 4s;
+}*/
 @keyframes example {
 	0% {
 		opacity: 0;
@@ -223,22 +299,13 @@ li {
 		transform: translate(-50%, -50%);
 	}
 }
-h2 {
-	overflow: auto;
-	color: white;
-	position: relative;
-	animation-name: fade;
-	animation-duration: 4s;
-	-webkit-animation-name: fade; /* Safari 4.0 - 8.0 */
-	-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-	font-weight: 450;
-	font-size: 250%;
-}
 button {
 	position: relative;
 	display: table;
 	padding: 14px 16px;
 	transition: 0.4s;
+	outline:none;
+	border:none;
 }
 button:hover {
 	cursor: pointer;
@@ -255,15 +322,6 @@ button::after {
 	-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
 }
 
-h3 {
-	color: white;
-	position: relative;
-	animation-name: fade;
-	animation-duration: 4s;
-	-webkit-animation-name: fade; /* Safari 4.0 - 8.0 */
-	-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-}
-
 @keyframes fade {
 	0% {
 		opacity: 0;
@@ -272,23 +330,16 @@ h3 {
 		opacity: 1;
 	}
 }
-
-.container {
-	height: 100%;
-	position: relative;
-	color: black;
-}
-
 /* Style the navbar */
 #navbar {
 	z-index: 2;
-	background-color: #444;
+	background-color: rgb(0,0,0,0.75);
 	overflow: hidden;
 	justify-items: top;
 	align-items: top;
 	width: screen;
 }
-#navbar a.active {
+#navbar button.active {
 	display: none;
 	background-color: skyblue;
 	color: rgb(0, 132, 255);
@@ -315,7 +366,8 @@ h3 {
 	transition: 0.5s;
 }
 /* Navbar links */
-#navbar a.link {
+#navbar button.link {
+	background-color: rgb(0,0,0,0.4);
 	display: block;
 	color: #f2f2f2;
 	text-align: center;
@@ -326,27 +378,16 @@ h3 {
 	font-weight: bold;
 	margin-left: 50;
 }
-#navbar g {
-	display: block;
-	border-bottom: 2px solid aqua;
-	color: rgb(0, 132, 255);
-	text-align: center;
-	padding: 16px;
-	font-weight: bold;
-	text-decoration: none;
-	float: right;
-}
-#navbar b {
+#navbar a  {
 	display: block;
 	color: #f2f2f2;
-	text-align: center;
 	padding: 6px;
 	text-decoration: none;
 	font-size: 24px;
 	float: left;
 }
 
-#navbar a:hover {
+#navbar button:hover {
 	border-bottom: 2px solid aqua;
 	color: rgb(0, 132, 255);
 	transition: 0.5s;
@@ -386,7 +427,8 @@ h3 {
 }
 
 /* The navigation menu links */
-.sidenav a {
+.sidenav button{
+	background-color: #111;
 	padding: 8px 8px 8px 32px;
 	text-decoration: none;
 	font-size: 25px;
@@ -396,7 +438,8 @@ h3 {
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+.sidenav button:hover {
+	background-color: #111;
 	color: skyblue;
 	border-bottom: 2px solid aqua;
 	box-shadow: 4px 4px 8px #222, 0 0 25px #111, 0 0 5px #333;
@@ -411,12 +454,15 @@ h3 {
 	font-size: 32px;
 	margin-left: 50px;
 }
+
 .sidenav .title {
 	position: absolute;
 	top: 0;
 	left: -32px;
 	font-size: 125%;
 	margin-right: -50px;
+	text-decoration: none;
+	color: #777;
 }
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
@@ -472,8 +518,13 @@ transition:0.25s;
 	box-shadow: 4px 4px 8px #222, 0 0 25px #111, 0 0 5px #333;
 	transition:0.25s;
 }
+
 iframe{
 	background-image: linear-gradient(120deg, rgb(0, 132, 255),violet);
+	width:100%;
+	height: 85vh;
+	padding: 100% auto;
+	overflow: visible;
 }
 
 @keyframes bounce
@@ -494,29 +545,22 @@ display: none;
 }
 
 @media screen and (max-width: 1080px) {
-	h1 {
-		font-weight: 900;
-		top: 67.5%;
-		left: 50%;
-		font-size: 8vw;
-		margin: 12.5% 0%;
-		color: whitesmoke;
-	}
 /* Page content */
 .content {
 	padding: 0px;
 	transition: 0.5s;
 }
-	#navbar a.link {
-		display: none;
-		color: #f2f2f2;
-		text-align: center;
-		overflow: initial;
-		padding: 16px;
-		text-decoration: none;
-		float: right;
-		font-weight: bold;
-		margin-left: 50;
+#navbar {
+	z-index: 2;
+	background-color: rgb(0,0,0,0.75);
+	overflow: auto;
+	justify-items: top;
+	align-items: top;
+	width: screen;
+	margin:0;
+}
+	#navbar button.link {
+display:none;
 	}
 	#navbar b {
 		display: block;
@@ -536,21 +580,22 @@ display: none;
 		text-decoration: none;
 		float: right;
 	}
-	#navbar a:hover {
+	#navbar button:hover {
 		border-bottom: 2px solid aqua;
 		color: rgb(0, 132, 255);
 		transition: 0.5s;
 	}
-	#navbar a.active {
+	#navbar button.active {
 		display: block;
 		background-color: skyblue;
 		color: rgb(0, 132, 255);
-		padding: 16px;
+		/*padding: 16px;*/
+		font-size: 18px;
 		margin-right: 50;
 		float: left;
 	}
 
-	#navbar a.active:hover {
+	#navbar button.active:hover {
 		background-color: rgb(0, 132, 255);
 		color: skyblue;
 		transition: 0.5s;
@@ -560,6 +605,7 @@ display: none;
 		display: table;
 		align-items: center;
 		position: relative;
+		margin: 0% auto;
 	}
 	.Button a {
 		font-size: 12px;
@@ -568,10 +614,12 @@ display: none;
 		border-radius: 8px;
 		background-color: rgb(0, 132, 255);
 		border: 2px solid rgb(0, 132, 255);
+		text-decoration: none;
 		display: grid;
-		margin: 50% 0%;
+		margin: 50% auto;
 		color: #999;
-		padding: 16px;
+		padding: 16px 18px;
+		justify-self: center;
 	}
 	.Button button {
 		font-size: 12px;
@@ -583,14 +631,24 @@ display: none;
 		display: grid;
 		margin: 50% 0%;
 		color: #999;
-		padding: 16px;
+		padding: 16px 18px;
+		justify-self: center;
 	}
+	
 	.Button a:hover {
 		text-decoration: underline;
 		background-color: #111;
 		color: rgb(0, 132, 255);
 		transition: 0.4s linear;
 	}
+	.Button a span {
+		display: none;
+			}
+
+	.Button a:hover span {
+display: none;
+	}
+
 }
 @media screen and (max-width: 640px) {
 	html {

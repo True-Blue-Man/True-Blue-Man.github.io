@@ -1,396 +1,287 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
-		<title>TrueBlueHub</title>
-		<meta name="description" content="Home of the TrueBlueNation" />
-		<meta name="author" content="Diante Littles" />
-		<link rel="stylesheet" href="./StyleSheets/Photon/PhotonDark.css" />
-		<link
-						rel="stylesheet"
-						href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-					/>
-		<link
-			rel="shortcut icon"
-			type="image/x-icon"
-			href="./ImageDir/TBH_icon.png"
-		/>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<style></style>
-		<script src="./Scripts/CookieTest.js"></script>
-	</head>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+	<title>TrueBlueHub</title>
+	<meta name="description" content="Welcome to TrueBlueHub, A Better Way to Connect Developers and Buisiness to Clients and Consumers. " />
+	<meta name="author" content="Diante Littles" />
+	<!---->	<link rel="stylesheet" href="./StyleSheets/Main.css" />
+	    <link rel="stylesheet" href="./StyleSheets/TextStyles.css" />
+		<link rel="stylesheet" href="./StyleSheets/ScrollElements.css" />
+		<link rel="stylesheet" href="./StyleSheets/ModalStyles.css" />
+		<link rel="stylesheet" href="./StyleSheets/SideBar.css" />
+		<link rel="stylesheet" href="./StyleSheets/Table.css" />
+		<link rel="stylesheet" href="./StyleSheets/Contact.css" />
+		<link rel="stylesheet" href="./StyleSheets/Accordion.css" />
+	<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+	<link
+		rel="shortcut icon"
+		type="image/x-icon"
+		href="./ImageDir/TBH_icon.png"
+	/>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<style></style>
+	<script src="./Scripts/CookieTest.js"></script>
+</head>
+<body>
 
-	<body>
-		<script>
-			<html>
-				<div id="Startscreen">
-					<h2>Powered By ...</h2>
-					<p>Code Smarter</p>
-				</div>
-				;
-			</html>;
-		</script>
-
-		<div id="mySidenav" class="sidenav">
-				<a href="index.html" class="title">
-						<img
-						src="./ImageDir/TBH_icon.png"
-						style="align-self: auto;"
-						width="32px"
-						height="32px"
-						alt="HomePage"
-					  />TrueBlueHub</a>
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-				>&otimes;</a
-			>
-			<button class="accordion" onclick="">
-					<p>Pages</p>
-				</button>
-				<div class="panel">
-						<a href="SocialHub.html"
-						><img
-							src="./ImageDir/Social_icon.png"
-							style="align-self: auto;"
-							width="32px"
-							height="32px"
-							alt="HomePage"
-						/>SocialHub</a
-					>
-					<a href="Downloads.html"
-						><img
-							src="./ImageDir/Download_icon.png"
-							style="align-self: auto;"
-							width="32px"
-							height="32px"
-							alt="Downloads"
-						/>Downloads</a
-					>
-					<a href="Products.html"
-						><img
-							src="./ImageDir/Products_icon.png"
-							style="align-self: auto;"
-							width="32px"
-							height="32px"
-							alt="Products"
-						/>Products</a
-					>
-					<a href="Services.html"
-						><img
-							src="./ImageDir/Services_icon.png"
-							style="align-self: auto;"
-							width="32px"
-							height="32px"
-							alt="Services"
-						/>Services</a
-					>
-					<a href="#"
-						><img
-							src="./ImageDir/Donate_icon.png"
-							style="align-self: auto;"
-							width="32px"
-							height="32px"
-							alt="Donate"
-						/>Donate</a
-					>
-					<a href="Community.html"
-						><img
-							src="./ImageDir/Community_icon.png"
-							style="align-self: auto;"
-							width="32px"
-							height="32px"
-							alt="Community"
-						/>Community</a
-					>
-					<a href="#"
-						><img
-							src="./ImageDir/Support_icon.png"
-							style="align-self: auto;"
-							width="32px"
-							height="32px"
-							alt="Support"
-						/>Support</a
-					>
-				</div>
-			<button class="accordion" onclick="">
-				<p>Themes</p>
-			</button>
-			<div class="panel">
-				<a href="#" onclick="changeCSS('./StyleSheets/Photon/PhotonDark.css')"
-					><i class="fa fa-moon-o"></i> DarkMode</a
-				>
-				<a href="#" onclick="changeCSS('./StyleSheets/Photon/PhotonLight.css')"
-					><i class="fa fa-sun-o"></i> LightMode</a
-				>
+<div class="Header">
+		<div class="parallax">
+<center>
+			<h1>Welcome to <br>TrueBlueHub!!!</br></h1>
+			<h2>A one stop shop for your software needs</h2>
+			<p>A Better Way to Connect Developers and Buisiness to Clients and Consumers</p>
+		
+			<div class="Button">
+			<a href="#" onclick="openPage('Services' , this, '#777')"><span>&#10148;</span>Get Started</a>
+			<a href="#" id="myBtn"><span>&#10148;</span>Learn More</a>
+			</div>
+</center>
+		</div>	
+		<hr>
+		</div>
+		
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				
+<iframe src="./Pages/AboutSoftwareDev.html" width="100%" height="100%" frameborder="0"></iframe>
+	
 			</div>
 		</div>
+	</div>
 
-		<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-		<div id="main">
-			<div class="container">
-				<center>
-					<img
-						style="align-self: auto;"
-						src="./ImageDir/SpaceBg.png"
-						width="100%"
-						height="240vh"
-					/>
-				</center>
-				<center>
-					<h1 class="ml3">TrueBlueHub</h1>
-				</center>
-			</div>
-
-			<div id="navbar">
-				<!-- <a class="active"  href="javascript:void(0)"><a href =HomePage.html><img src="Home_icon.png" style="align-self: auto;" width="32px" height = "32px" alt="HomePage"></a></a>
-                       --><a
-					href="javascript:void(0)"
-					class="Active"
-					onclick="openNav()"
-					><img
-						src="./ImageDir/MenuIcon.png"
-						style="align-self: auto;"
-						width="32px"
-						height="32px"
-						alt="MenuIcon"
-				/></a>
-				<s href="javascript:void(0)"
-					><img
-						src="./ImageDir/Search_icon.png"
-						style="align-self: auto;"
-						width="32px"
-						height="32px"
-						alt="MenuIcon"
-					/>Search Currently is Offline.
-				</s>
+	<div class="Main">
+			<center><h2>Great Features You'll love</h2></center>
+			<div class="Table">
+				<div style="border-top:16px solid aqua; border-bottom:16px solid aqua;">
+					<h3  style="color:aqua;" >
+						Custom funtionality <i class="fa fa-microchip"></i>
+					</h3>
+					<p>
+						Each website and software we build is built not only to be great, 
+						but also to stand out from the crowd of boring and uninspired 
+						designs and templates, all while being user friendly and practical.
+					</p>
+				</div>
+				<div style="border-top:16px solid aqua; border-bottom:16px solid aqua;">
+						<h3  style="color:aqua;" >
+							Responsive Support Team <i class="fa fa-support"></i>
+						</h3>
+						<p>
+						   We are not robots, we are humans, and we are always here to help. 
+						   Even when we hand off our products to you we will still help you 
+						   solve any problems that may arise within our software.
+						</p>
+					</div>
+		
+					<div style="border-top:16px solid aqua; border-bottom:16px solid aqua;">
+							<h3  style="color:aqua;" >
+								Great Prices <i class="fa fa-money"></i>
+							</h3>
+							<p>
+								We do our best to keep our prices reasonable. In fact all Prices 
+								are negotiable. We will never over charge you for anything. 
+							</p>
+					</div>
+		
+					<div style="border-top:16px solid aqua; border-bottom:16px solid aqua;">
+							<h3  style="color:aqua;"  >
+									No Accounts Needed <i class="fa fa-user-circle-o"></i>
+								</h3>
+								<p>
+									Unlike some of our competitors we don't keep any info or 
+									gather any unwanted data on you. We use Google's highly 
+									integrated system to do that for us. All you need is a Google
+									account and we can process any neccecary info. After your 
+									transactions are complete, the info is gone from our system.
+								</p>
+					</div>
+		
+					<div style="border-top:16px solid aqua; border-bottom:16px solid aqua;">
+								<h3  style="color:aqua;" >
+									Custom Features <i class="fa fa-table"></i>
+								</h3>
+								<p>
+									For all our software we build in custom features of your choosing.
+									We also add any content you request into the software.
+									(i.e. artwork, themes, music, gui, components etc).
+									This will ensure that you will be happy with our work, as it is 
+									specially talored just for you.    
+								</p>
+					</div>
+					<div style="border-top:16px solid aqua; border-bottom:16px solid aqua;">
+							<h3  style="color:aqua;" >
+									Highly Integrated Systems <i class="fa fa-gears"></i>
+								</h3>
+								<p>
+									People can view your profiles 
+									and Like <i class="fa fa-thumbs-up"></i>, 
+									Comment <i class="fa fa-comment"></i>, 
+									Follow<i class="fa fa-plus-circle"></i>,
+									and / or Subscribe <i class="fa fa-bell"></i>
+									All without leaving your website 
+									or creating another account to keep track of.
+								</p>
+								<p>
+									Our local applications are highly compatable 
+									apps that can use or view any type of files, and push/pull 
+									info from the internet to your pc all without having to open
+									the browser. 
+								</p>
+					</div>
 			</div>
 			<div style="clear:both">
-				<!--<button
-					class="tablink"
-					onclick="openPage('Home', this, '#555')"
-					id="defaultOpen"
-				>
-					Home
-				</button>-->
-				<!--<div id="Home" class="tabcontent">-->
-					<h2><i class="fa fa-dashboard"></i> DashBoard</h2>
-					<button class="accordion" style="width:25%; float: left;" onclick="">
-							<h2><i class="fa fa-eye"></i> Views</h2>
-						</button>
-						<div class="panel" style="width: 25%; margin: 0%;">
-					<button onclick="listView()" style="padding: 12px 16px; float: left;">
-						<i class="fa fa-bars"></i> List
-					</button>
-					<button onclick="gridView()" style="padding: 12px 16px;float: left;">
-						<i class="fa fa-th-large"></i> Grid
-					</button>
-				<script src="./Scripts/Funtions.js"></script>
-						</div>
-					
-					
-					<div style="clear:both">
-						<div class="row">
-							<div class="column">
-								<button class="accordion" onclick="">
-									<h2>Updates.</h2>
-								</button>
-								<div class="panel">
-									<h3>Schedule</h3> 
-									<p>9/26/19 Site Construction</p>
-									<p>10/07/19 Site Review</p>
-									<p>10/10/19 Beta Release w/ release notes</p>
-									<p>10/15/19 Additional Feature Update</p>
-									<h3>Current Site Version</h3>
-									<p> 0.2.0 (Beta Edition)</p>
-								</div>
-							</div>
-							<div class="column">
-								<button class="accordion" onclick="">
-									<h2>Media</h2>
-								</button>
-								<div class="panel">
-									<p>
-										You can check out our Story on by Visiting the pages linked
-										below or alternitively if you'd like a preview of what we've
-										been working on feel free to click the media tab on the
-										TabBar
+
+					<h2>Commonly asked questions.</h2>
+							<button class="accordion" onclick="">
+								<h2>Why choose us?</h2>
+							</button>
+							<div class="panel">
+								<div style="float: left">
+									<h3>* Our Passion</h3>
+									<p> 
+										Well for starters we are passionate about what we do. 
+										Unlike Bots or Programs we take joy and pride in 
+										creating Technologies for you to use. Although 
+										web creation widgets do exist, they are still limited 
+										as most of them offer widely used templates that can
+										put a damper on your creativity.
 									</p>
-									<button>
-										<img
-											src="./ImageDir/DeviantArt_icon.png"
-											width="64vw"
-											height="64vh"
-											alt="Deviantart"
-										/>
-
-										<a
-											href="https://www.deviantart.com/fairytalesartist/gallery/64265506/fairly-odd-zootopia"
-										>
-											<h2 style="text-align: right; float: right;">FOZ Comic</h2>
-										</a>
-									</button>
-								</div>
-							</div>
+									<h3>* Custom Works</h3>
+									<p>
+										Everything we create is customly made with passion.
+										Because we love what we do so much we see our 
+										services as a work of art. It is because of this that we 
+										can create software and technologies that not only 
+										allow you to compete with others but will also allow 
+										you to stand out from the crowd drawing more clients 
+										and customers to you.  
+									</p>
+									<h3>* Responsive Support</h3>
+									<p>
+										When you send us messages we will do our best to 
+										respond to them right away because we are a team 
+										of real humans here to help you out. In fact, You 
+										can use the chat in the bottom right corner to see 
+										just how responsive we are. 
+									</p>
 						</div>
-						<div class="row">
-							<div class="column">
-								<button class="accordion" onclick="">
-									<h2>News.</h2>
-								</button>
-								<div class="panel"><p>Some Text</p></div>
-							</div>
-
-							<div class="column">
-								<button class="accordion" onclick="">
-									<h2>Live Stats</h2>
-								</button>
-								<div class="panel">
-									<div style="float: left">
-										<h2>Discord</h2>
-										<iframe
-											src="https://discordapp.com/widget?id=231128243074236416&theme=dark"
-											width="350vw"
-											height="500vh"
-											allowtransparency="true"
-											frameborder="0"
-										></iframe>
-									</div>
-									<div style="clear: both"></div>
-								</div>
-							</div>
-						</div>
+						
 					</div>
-					<script src="./Scripts/Funtions.js"></script>
-				<!--</div>-->						
-				<center>
-							<button id="myBtn" style="width: 100%;"><h2>Join</h2></button>
-						</center>
-
-						<div id="myModal" class="modal">
-							<div class="modal-content">
-								<span class="close">&times;</span>
-								<center><h2>Attention</h2></center>
+					<button class="accordion" onclick="">
+							<h2>What kind of services do we offer?</h2>
+						</button>
+						<div class="panel">
+								<h3>* Our Focus</h3>
 								<p>
-									You are about to leave the site and enter our discord server.
-									By doing so you are acknowleging that you have read the
-									Community Rules & Info and you are completly aware that
-									failure to follow these guidelines can result in a perminate
-									ban from the server.
+									Our main focus is technology development,
+									and software development is what we do best.										
 								</p>
-								<center>
-									<a href="https://discord.gg/N3xzTXY">
-										Join
-									</a>
+								<p>
+									We specialize in both web development and software development.
+								</p>
+								<div>
+										
+								<h3>Languages we know.</h3>
+								<ul>
+								<p> *-> Web</p>
+								<li>JavaScript</li>
+								<li>Html</li>
+								<li>CSS</li>
+								<li>Python</li>
+								
+								
+								<p>*-> Software</p>
+								<li>C++</li>
+								<li>Java</li>
+								<li>GML</li>
+								<li>Visual Script</li>
+								<li>Python</li>
+
+								<p> And of course English</p>
+								</ul>
+									
+								<h3>Libraries we use (and make)</h3>
+								<ul>
+								<p> *-> Web</p>
+								<li>React.js</li>
+								<li>React-Redux</li>
+								<li>BootStrap</li>
+								<li>Sass</li>
+								
+								<p>*-> Software</p>
+								<li>DLL</li>
+								<li>JSON</li>
+								<li>INI</li>
+								<li>BAT</li>
+								<li>BIN</li>
+								</ul>
+								
+							   </div>
+								
+							   <div style="clear:both;">
+									<center>
+								<h3>You can find out more on our Services Page.</h3> 
+								<div class="Button">
+								<a href="Services.html">Get Started</a>	
+								</div>
 								</center>
+
+
+								<h3>* Other Services</h3>
+								<p>
+									We do however have an extensive 
+									community of creative and talented artists, game 
+									designers and music producers.	
+								</p>
 							</div>
-						</div>
-						<script src="./Scripts/Funtions.js"></script>
-					</div>
-
-					<script>
-						//for accordion
-						var acc = document.getElementsByClassName("accordion");
-						var i;
-						for (i = 0; i < acc.length; i++) {
-							acc[i].addEventListener("click", function() {
-								this.classList.toggle("active");
-								var panel = this.nextElementSibling;
-								if (panel.style.maxHeight > "0vh") {
-									panel.style.maxHeight = "0vh";
-								} else {
-									panel.style.maxHeight = panel.scrollHeight + "vh";
-								}
-							});
-						}
-					</script>
-					<button class="livechat" onclick="">
-						<img
-							src="./ImageDir/Discord_icon.png"
-							width="64px"
-							height="64px"
-							alt=""
-							style="float: left;"
-						/>
-						<center>LiveChat</center>
-					</button>
-					<div class="openchat">
-						<center>
-							<widgetbot
-							server="606954821152669706"
-							channel="626828449524219904"
-								width="100%"
-								height="500"
-								shard="https://disweb.deploys.io"
-							></widgetbot>
-							<script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
-						</center>
-					</div>
-
-					<script>
-						var livechat = document.getElementsByClassName("livechat");
-						var i;
-						for (i = 0; i < acc.length; i++) {
-							livechat[i].addEventListener("click", function() {
-								this.classList.toggle("A");
-								var panel = this.nextElementSibling;
-								if (panel.style.maxHeight > "0px") {
-									panel.style.maxHeight = "0px";
-								} else {
-									panel.style.maxHeight = panel.scrollHeight + "px";
-								}
-							});
-						}
-					</script>
+							<script src="./Scripts/accordion.js"></script>		
 				</div>
+			<!--</div>-->						
+				</div>
+			<div class="Table">
+					<div>
+						<a href="https://info.flagcounter.com/vT3S"><img src="https://s11.flagcounter.com/countxl/vT3S/bg_000000/txt_FFFFFF/border_00C5CC/columns_4/maxflags_12/viewers_0/labels_1/pageviews_1/flags_0/percent_1/"  style="width: 100%;" alt="Flag Counter" border="0"></a>
+						<a href="https://info.flagcounter.com/vT3S"><img src="https://s11.flagcounter.com/map/vT3S/size_l/txt_000000/border_CCCCCC/pageviews_1/viewers_0/flags_1/"  style="width: 100%;" alt="Free counters!" border="0"></a>
+				   </div>	
+			</div>
+	</div>
+
 			
-			<script>
-				function changeCSS(cssFile, cssLinkIndex) {
-					var oldlink = document
-						.getElementsByTagName("link")
-						.item(cssLinkIndex);
-
-					var newlink = document.createElement("link");
-					newlink.setAttribute("rel", "stylesheet");
-					newlink.setAttribute("type", "text/css");
-					newlink.setAttribute("href", cssFile);
-
-					document
-						.getElementsByTagName("head")
-						.item(0)
-						.replaceChild(newlink, oldlink);
-				}
-
-				window.onscroll = function() {
-					myFunction();
-				};
-				var navbar = document.getElementById("navbar");
-				var sticky = navbar.offsetTop;
-
-				function openNav() {
-					document.getElementById("mySidenav").style.width = "250px";
-					document.getElementById("main").style.marginLeft = "250px";
-					document.body.style.backgroundColor = "rgb(0,0,0,0.4)";
-				}
-
-				function closeNav() {
-					document.getElementById("mySidenav").style.width = "0";
-					document.getElementById("main").style.marginLeft = "0";
-					document.body.style.backgroundColor = "white";
-				}
-
-				function myFunction() {
-					if (window.pageYOffset >= sticky) {
-						navbar.classList.add("sticky");
-					} else {
-						navbar.classList.remove("sticky");
-					}
-				}
-			</script>
-		</div>
-
-		<!--<h1 style="color:aqua;" margin-left:15px >My First WebPage</h1>-->
-
-		<div style="color:aqua;" id="footer">
-			<center>&copy; TrueBlueMan(Diante Littles) 2019. All rights reserved.</center>
-		</div>
-	</body>
+<script src="./Scripts/app.js"></script>
+<script>
+		// Set the date we're counting down to
+		var countDownDate = new Date("Nov 22, 2019 12:00:00" ).getTime();
+	
+		// Update the count down every 1 second
+		var countdownfunction = setInterval(function () {
+	
+			// Get todays date and time
+			var now = new Date().getTime();
+	
+			// Find the distance between now an the count down date
+			var distance = countDownDate - now;
+	
+			// Time calculations for days, hours, minutes and seconds
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	
+			// Output the result in an element with id="demo"
+			document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+	
+			// If the count down is over, write some text 
+			if (distance < 0) {
+				clearInterval(countdownfunction);
+				document.getElementById("demo").innerHTML = "EXPIRED";
+			}
+		}, 1000);</script>
+</div>
+</body>
 </html>

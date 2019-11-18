@@ -1,76 +1,33 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <title>Social Hub</title>
-        <meta name="description" content="A simple introduction to HTML">
-        <meta name="author" content ="Diante Littles">
-        <link rel="stylesheet" href="./StyleSheets/Main.css"/>
-		    <link rel="stylesheet" href="./StyleSheets/Accordion.css"/>
-	    	<link rel="stylesheet" href="./StyleSheets/ModalStyles.css"/>
-    		<link rel="stylesheet" href="./StyleSheets/Table.css"/>
-    		<link rel="stylesheet" href="./StyleSheets/ScrollElements.css"/>
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      />
-        <link
-        rel="shortcut icon"
-        type="image/x-icon"
-        href="./ImageDir/TBH_icon.png"
-      />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-
-    </style>
-    </head>
-
-      
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+	<title>TrueBlueHub</title>
+	<meta name="description" content="Welcome to TrueBlueHub, A Better Way to Connect Developers and Buisiness to Clients and Consumers. " />
+	<meta name="author" content="Diante Littles" />
+	<!---->	<link rel="stylesheet" href="./StyleSheets/Main.css" />
+	    <link rel="stylesheet" href="./StyleSheets/TextStyles.css" />
+		<link rel="stylesheet" href="./StyleSheets/ScrollElements.css" />
+		<link rel="stylesheet" href="./StyleSheets/ModalStyles.css" />
+		<link rel="stylesheet" href="./StyleSheets/SideBar.css" />
+		<link rel="stylesheet" href="./StyleSheets/Table.css" />
+		<link rel="stylesheet" href="./StyleSheets/Contact.css" />
+		<link rel="stylesheet" href="./StyleSheets/Accordion.css" />
+	<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+	<link
+		rel="shortcut icon"
+		type="image/x-icon"
+		href="./ImageDir/TBH_icon.png"
+	/>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<style></style>
+	<script src="./Scripts/CookieTest.js"></script>
+</head>
     <body>
-      <div id="mySidenav" class="sidenav">
-        <a href="index.html" class="title">
-          <img
-            src="./ImageDir/TBH_icon.png"
-            style="align-self: auto;"
-            width="32px"
-            height="32px"
-            alt="HomePage"
-          />TrueBlueHub</a
-        >
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-          >&otimes;</a
-        >
-        <a href="index.html"
-          ><i class="fa fa-home"></i> Home</a
-        >
-      <a href="Downloads.html"
-        ><i class="fa fa-download"></i> Downloads</a
-      >
-      <a href="Products.html"
-        ><i class="fa fa-product-hunt"></i> Products</a
-      >
-      <a href="Services.html"
-        ><i class="fa fa-tasks"></i> Services</a
-      >
-      <a href="Community.html"
-        ><i class="fa fa-user"></i> Community</a
-      >
-      <a href="Support.html"
-        ><i class="fa fa-send"></i> Support</a
-      >
-      </div>
-              <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-              <div id="main">                    
-                      <div id="navbar">
-                        <a href="#" class="active" onclick="openNav()"><i class="fa fa-bars"></i></a>
-                        <b><img src="./ImageDir/TBH_icon.png" width="32vw">TrueBlueHub</img></b>
-                        <a href="Support.html" class="link"><i class="fa fa-support"></i> Support</a>
-                        <a href="Community.html" class="link"><i class="fa fa-user"></i> Community</a>
-                        <a href="Services.html" class="link"><i class="fa fa-tasks"></i> Services</a>
-                        <a href="Products.html" class="link"><i class="fa fa-product-hunt"></i> Products</a>
-                        <a href="Downloads.html" class="link"><i class="fa fa-download"></i> Downloads</a>
-                        <g><i class="fa fa-dashboard"></i>Dashboard</g>
-                        <a href="index.html" class="link"><i class="fa fa-home"></i> Home</a>
-                      </div>
+        <div class="Header">
                       <div class="parallax">
                         <center>
                           <h1>Dashboard</h1>
@@ -80,20 +37,21 @@
                         </center>
                       
                     </div>
-                  <div  style="clear:both">
-                      <div class="Table" style=" grid-template-columns:repeat(auto-fit, minmax(300px,1fr)) ;">
+        </div>
+        <div class="Main">
+                      <div class="Table" style=" grid-template-columns:repeat(auto-fit, minmax(400px,1fr)) ;">
                           
                          <div style="border-top:16px solid aqua; border-bottom:16px solid aqua;">
                                
                                <center>
                                 <h2  style="color:aqua;">Updates.</h2>
-                                <p style="font-size:30px">Next Site Update 11/11/19 @12pm est</p>
+                                <p style="font-size:30px">Next Site Update 11/22/19 @12pm est</p>
                                 <hr style = "width: 75%;">
                                  <p id="demo" style="font-size:30px"></p>
                                </center>
                                 <h3>Schedule</h3> 
                                 <button class="accordion" onclick="">
-                                    <h2>(11/11/19) > Beta Launch Update [0.2.5]</h2>
+                                    <h2>(11/22/19) > Beta Launch Update [0.2.5]</h2>
                                   </button>
                                   <div class="panel"> 
                                    <h3>Changes.</h3> 
@@ -159,7 +117,7 @@
                          <div style="border-top:16px solid aqua; border-bottom:16px solid aqua;">
                                
                             <center>
-                             <h2  style="color:aqua;">Live Stats.</h2>
+                             <h2  style="color:aqua;">Discord Stats.</h2>
                             </center>
                             <iframe
                             src="https://discordapp.com/widget?id=606954821152669706&theme=dark"
@@ -168,11 +126,18 @@
                             allowtransparency="true"
                             frameborder="0"
                           ></iframe>
-                          <a href="https://info.flagcounter.com/r8pR"><img src="https://s11.flagcounter.com/countxl/r8pR/bg_000000/txt_FFFFFF/border_00FFFF/columns_2/maxflags_10/viewers_0/labels_1/pageviews_1/flags_0/percent_1/" alt="Flag Counter" border="0" width="100%"></a>
-		<a href="https://info.flagcounter.com/37h6"><img src="https://s01.flagcounter.com/map/37h6/size_s/txt_000000/border_CCCCCC/pageviews_1/viewers_0/flags_0/" alt="Flag Counter" border="0"  width="100%"></a>
+                        </div>
+                        
+                                       <div style="border-top:16px solid aqua; border-bottom:16px solid aqua;">
+                            <center>
+                                <h2  style="color:aqua;">Web Stats.</h2>
+                               </center>
+                               <a href="https://info.flagcounter.com/vT3S"><img src="https://s11.flagcounter.com/countxl/vT3S/bg_000000/txt_FFFFFF/border_00C5CC/columns_4/maxflags_12/viewers_0/labels_1/pageviews_1/flags_0/percent_1/"  style="width: 100%;" alt="Flag Counter" border="0"></a>
+                               <a href="https://info.flagcounter.com/vT3S"><img src="https://s11.flagcounter.com/map/vT3S/size_l/txt_000000/border_CCCCCC/pageviews_1/viewers_0/flags_1/"  style="width: 100%;" alt="Free counters!" border="0"></a>
                        </div>
-                          
               </div> 
+ 
+              </div>
                          <script>
                   //for accordion
                   var acc = document.getElementsByClassName("accordion");
@@ -189,7 +154,6 @@
                     });
                   }
                 </script>
-              </div>
   
                 <script>
                   
@@ -239,40 +203,33 @@ document.getElementById("defaultOpen").click();
 	
 
 		<!--<h1 style="color:aqua;" margin-left:15px >My First WebPage</h1>-->
-
-		<div style="color:lime;" id="footer">
-			<center>&copy;Diante Littles 2019. All rights reserved.</center>
-		</div>
 	</body>
 </html>
-
 <script>
     // Set the date we're counting down to
-    var countDownDate = new Date("Nov 11, 2019 12:00:00").getTime();
-    
+    var countDownDate = new Date("Nov 22, 2019 12:00:00" ).getTime();
+  
     // Update the count down every 1 second
-    var countdownfunction = setInterval(function() {
-    
-    // Get todays date and time
-    var now = new Date().getTime();
-    
-    // Find the distance between now an the count down date
-    var distance = countDownDate - now;
-    
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-    
-    // If the count down is over, write some text 
-    if (distance < 0) {
-      clearInterval(countdownfunction);
-      document.getElementById("demo").innerHTML = "EXPIRED";
-    }
-    }, 1000);
-    </script>
+    var countdownfunction = setInterval(function () {
+  
+      // Get todays date and time
+      var now = new Date().getTime();
+  
+      // Find the distance between now an the count down date
+      var distance = countDownDate - now;
+  
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+      // Output the result in an element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+  
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(countdownfunction);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);</script>
