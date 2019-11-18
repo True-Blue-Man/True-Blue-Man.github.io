@@ -2,7 +2,7 @@
     display: grid;
     box-sizing: border-box;
 	grid-template-columns:repeat(auto-fit, minmax(296px,1fr)) ;
-	grid-gap: 16px 16px;
+	grid-gap: 16px 48px;
 	padding: 16px 16px;
 	background-image: linear-gradient(45deg,rgb(0,132,255),rgb(255,0,255)); 
 }
