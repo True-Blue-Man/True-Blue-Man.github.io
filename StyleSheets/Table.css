@@ -1,7 +1,7 @@
 .Table {
     display: grid;
     box-sizing: border-box;
-	grid-template-columns:repeat(auto-fit, minmax(296px,1fr)) ;
+	grid-template-columns:repeat(auto-fit, minmax(250px,1fr)) ;
 	grid-gap: 16px 48px;
 	padding: 16px 48px;
 	background-image: linear-gradient(45deg,rgb(0,132,255),rgb(255,0,255)); 
@@ -10,7 +10,7 @@
 {
     background-image: linear-gradient(90deg,#555,#333); 
     width: 100%;
-	padding: 16px 10%; 
+	padding: 0px 8px; 
 	transition:0.5s;
 	box-shadow: 4px 4px 8px #222, 0 0 25px #111, 0 0 5px #333;
 }
@@ -71,17 +71,17 @@ transition:0.25s;
 	.Table{
 		width: 100%;
 		margin-right: 0%;
-		padding: 0px 0px;
+		padding: 18px;
 		grid-template-columns:repeat(auto-fit, minmax(max-width,1fr)) ;
 		grid-gap: 16px 48px;
-
+overflow: hidden;
 	}
 	.Table div
 	{
 		
 		background-image: linear-gradient(90deg,#555,#333); 
 		width: 100%;
-		padding: 4px 1%; 
+		padding: 16px 16px; 
 		transition:0.5s;
 		animation: ScaleUp .25s linear;
 	}
