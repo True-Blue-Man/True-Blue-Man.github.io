@@ -7,6 +7,18 @@ window.onscroll = function () {
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetHeight;
 
+function openBottomNav() {
+    document.getElementById("mySideLegal").style.height = "100%";
+    document.getElementById("mySideLegal").style.bottom = "0px";
+    document.body.style.backgroundColor = "rgb(0,0,0,0.75)";
+}
+
+function closeBottomNav() {
+    document.getElementById("mySideLegal").style.height = "0";
+    document.getElementById("mySideLegal").style.bottom = "-64px";
+    document.body.style.backgroundColor = "white";
+}
+
 
 function openSide() {
     document.getElementById("mySideBar").style.width = "100%";
@@ -19,6 +31,80 @@ function closeSide() {
     document.getElementById("main").style.marginRight = "0";
     document.body.style.backgroundColor = "white";
 }
+
+//Dashboard Page
+function openDash() {
+    document.getElementById("mySideDash").style.width = "100%";
+    document.getElementById("main").style.marginRight = "100%";
+    document.body.style.backgroundColor = "rgb(0,0,0,0.4)";
+}
+function closeDash() {
+    document.getElementById("mySideDash").style.width = "0";
+    document.getElementById("main").style.marginRight = "0";
+    document.body.style.backgroundColor = "white";
+}
+//Downloads Page
+function openDownloads() {
+    document.getElementById("mySideDownload").style.width = "100%";
+    document.getElementById("main").style.marginRight = "100%";
+    document.body.style.backgroundColor = "rgb(0,0,0,0.4)";
+}
+
+function closeDownloads() {
+    document.getElementById("mySideDownload").style.width = "0";
+    document.getElementById("main").style.marginRight = "0";
+    document.body.style.backgroundColor = "white";
+}
+//Products Page
+function openProducts() {
+    document.getElementById("mySideProducts").style.width = "100%";
+    document.getElementById("main").style.marginRight = "100%";
+    document.body.style.backgroundColor = "rgb(0,0,0,0.4)";
+}
+
+function closeProducts() {
+    document.getElementById("mySideProducts").style.width = "0";
+    document.getElementById("main").style.marginRight = "0";
+    document.body.style.backgroundColor = "white";
+}
+//ServicesPage
+function openServices() {
+    document.getElementById("mySideServices").style.width = "100%";
+    document.getElementById("main").style.marginRight = "100%";
+    document.body.style.backgroundColor = "rgb(0,0,0,0.4)";
+}
+
+function closeServices() {
+    document.getElementById("mySideServices").style.width = "0";
+    document.getElementById("main").style.marginRight = "0";
+    document.body.style.backgroundColor = "white";
+}
+//Community Page
+function openCommunity() {
+    document.getElementById("mySideCommunity").style.width = "100%";
+    document.getElementById("main").style.marginRight = "100%";
+    document.body.style.backgroundColor = "rgb(0,0,0,0.4)";
+}
+
+function closeCommunity() {
+    document.getElementById("mySideCommunity").style.width = "0";
+    document.getElementById("main").style.marginRight = "0";
+    document.body.style.backgroundColor = "white";
+}
+
+//SupportPage
+function openSupport() {
+    document.getElementById("mySideSupport").style.width = "100%";
+    document.getElementById("main").style.marginRight = "100%";
+    document.body.style.backgroundColor = "rgb(0,0,0,0.4)";
+}
+
+function closeSupport() {
+    document.getElementById("mySideSupport").style.width = "0";
+    document.getElementById("main").style.marginRight = "0";
+    document.body.style.backgroundColor = "white";
+}
+
 
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";

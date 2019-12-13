@@ -1,7 +1,7 @@
 .Table {
     display: grid;
     box-sizing: border-box;
-	grid-template-columns:repeat(auto-fit, minmax(400px,1fr)) ;
+	grid-template-columns:repeat(auto-fit, minmax(300px,1fr)) ;
 	grid-gap: 16px 48px;
 	padding: 16px 48px;
 	background-image: linear-gradient(45deg,rgb(0,132,255),rgb(255,0,255)); 
@@ -72,13 +72,12 @@ transition:0.25s;
 		width: 100%;
 		margin-right: 0%;
 		padding: 18px;
-		grid-template-columns:repeat(auto-fit, minmax(250px,1fr)) ;
-		grid-gap: 16px 48px;
+		grid-template-columns:repeat(auto-fit, minmax(200px,1fr)) ;
+		grid-gap: 16px 16px;
 overflow: hidden;
 	}
 	.Table div
 	{
-		
 		background-image: linear-gradient(90deg,#555,#333); 
 		width: 100%;
 		padding: 0px 16px; 

@@ -1,319 +1,48 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
-		<title>TrueBlueHub</title>
-		<meta name="description" content="Home of the TrueBlueNation" />
-		<meta name="author" content="Diante Littles" />
-		<link rel="stylesheet" href="./StyleSheets/Main.css" />
-		<link rel="stylesheet" href="./StyleSheets/ModalStyles.css" />
-		<link rel="stylesheet" href="./StyleSheets/ScrollElements.css" />
-		<link
-		rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-	/>
-		<link
-			rel="shortcut icon"
-			type="image/x-icon"
-			href="./ImageDir/TBH_icon.png"
-		/>
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<style></style>
-		<script src="./Scripts/CookieTest.js"></script>
-	</head>
-
-	<body>
-			<div id="mySidenav" class="sidenav">
-					<a href="index.html" class="title">
-							<img
-							src="./ImageDir/TBH_icon.png"
-							style="align-self: auto;"
-							width="32px"
-							height="32px"
-							alt="HomePage"
-						  />TrueBlueHub</a>
-				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-					>&otimes;</a
-				>
-							<a href="Dashboard.html"
-							><i class="fa fa-dashboard"></i> Dashboard</a
-						>
-						<a href="Downloads.html"
-							><i class="fa fa-download"></i> Downloads</a
-						>
-						<a href="Products.html"
-							><i class="fa fa-product-hunt"></i> Products</a
-						>
-						<a href="Services.html"
-							><i class="fa fa-tasks"></i> Services</a
-						>
-						<a href="Community.html"
-							><i class="fa fa-user"></i> Community</a
-						>
-						<a href="Support.html"
-							><i class="fa fa-send"></i> Support</a
-						>
-					</div>
-
-<div class="main">				
-<div class="parallax"></div>
-				
-		    <div id="navbar">
-				<a href="#" class="active" onclick="openNav()"><i class="fa fa-bars"></i></a>
-				<b><img src="./ImageDir/TBH_icon.png" width="32vw">TrueBlueHub</img></b>
-				<s href="javascript:void(0)"
-					><i class="fa fa-search"></i> Search Currently is Offline.
-				</s>
-				<a href="#" class="link"><i class="fa fa-support"></i> Support</a>
-				<a href="Community.html" class="link"><i class="fa fa-user"></i> Community</a>
-				<a href="Services.html" class="link"><i class="fa fa-tasks"></i> Services</a>
-				<a href="Products.html" class="link"><i class="fa fa-product-hunt"></i> Products</a>
-				<a href="Downloads.html" class="link"><i class="fa fa-download"></i> Downloads</a>
-				<a href="Dashboard.html" class="link"><i class="fa fa-dashboard"></i> Dashboard</a>
-				<g><i class="fa fa-home"></i> Home</g>	
-			</div>
+		<!--<button href="#" class="active" onclick="openNav()">
+				<i class="fa fa-bars"></i>
+			</button>
 			
-			<div style="clear:both"></div>
-			<div class="parallax">
-				<center><h1>Welcome to <br>TrueBlueHub!!!</br></h1>
-				<h2>A one stop shop for your software needs</h2>
-				<p>A Better Way to Connect Developers and Buisiness to Clients and Consumers</p>
+			<button
+				href="#"
+				class="link"
+				onclick="openSupport()"
+			>
+				<i class="fa fa-support"></i> Support</button
 			
-			<div class="Button">
-				<a href="#">Get Started</a>
-				<a href="Support.html">Learn More</a>
-			</div>
-				</center>
-			
-		</div>
-			
-				<center><h2>Our Mission</h2></center>
-					<p>
-						TrueBlueHub as a community exists for the enhancement of technology
-						development as well as the expression of Creative Works. Our hope is
-						to one day become a creative power house that empowers you the
-						individual creator. For now our focus is on the ever growing Software
-						Development market. However as our team expands and we grow to have
-						multiple fields of experience then we will be able to offer more
-						advanced products & services.
-					</p>
-					<center><h2>Site Contents</h2></center>
-					<p>
-						To Access the contents of this site you can click on the button at the
-						top left of the Navigation bar. Upon doing so you will see a list of
-						Pages these go as follows:
-					</p>
-					<ul>
-						<li>
-							SocialHub - for access to our Social Media integrations.
-						</li>
-						<li>
-							Downloads - for access to our downloadable freeware or opensource
-							projects.
-						</li>
-						<li>
-							Products - for access to our downloadable and closed source
-							software.
-						</li>
-						<li>
-							Services - for access to paid customary services. I.E. Full End Web
-							Development.
-						</li>
-						<li>
-							Donate - this will allow you to donate to a cause or a member of our
-							community
-						</li>
-						<li>
-							Community - for Staff Directory, Featured Works, and more.
-						</li>
-						<li>
-							Support - Got Questions? Need help? This is the place to go. we will
-							work to have your questions answered ASAP.
-						</li>
-					</ul>
-	
-					<center><h2>The Agenda</h2></center>
-					<p>
-						As the creator of this community and this site I can promise a few
-						things. Development within all aspects of this community will remain
-						open and as we grow the site as well as its assets will grow as well.
-						this includes but is not limited to:
-					</p>
-	
-					<ul>
-						<li>
-							Creator sites.
-						</li>
-						<li>
-							Games Page.
-						</li>
-						<li>
-							Products.
-						</li>
-						<li>
-							Services.
-						</li>
-						<li>
-							Partnerships.
-						</li>
-						<li>
-							Account systems.
-						</li>
-						<li>
-							Update Logs.
-						</li>
-						<li>
-							and much more.
-						</li>
-					</ul>
-					<center><h2>Final Note.</h2></center>
-					<p>
-						Thank you for taking the time to read this over all summuary. If you
-						would like to join our Creative Team than please feel free to Submit
-						an application via The Community Tab. Also Please Feel free to Check
-						out Our great content hosted by TrueBlueMan you can Access them by
-						clicking or taping on the Social Media Buttons on the top right of the
-						NavBar.
-					</p>
-				</div>
-		
-	<!--<div class="Particles">
-				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
-			</div>-->	
-			
-			<script>
-				//for accordion
-				var acc = document.getElementsByClassName("accordion");
-				var i;
-				for (i = 0; i < acc.length; i++) {
-					acc[i].addEventListener("click", function() {
-						this.classList.toggle("active");
-						var panel = this.nextElementSibling;
-						if (panel.style.maxHeight > "0vh") {
-							panel.style.maxHeight = "0vh";
-						} else {
-							panel.style.maxHeight = panel.scrollHeight + "vh";
-						}
-					});
-				}
-			</script>			
-	<button class="livechat" onclick="">
-		     
-			<img
-			src="./ImageDir/Discord_icon.png"
-			width="64px"
-			height="64px"
-			alt=""
-			style="float: left;"
-		/>
-		<center>LiveChat</center>
-	</button>
-	<div class="openchat">
-		<center>
-			<widgetbot
-			server="606954821152669706"
-			channel="626828449524219904"
-				width="100%"
-				height="500"
-				shard="https://disweb.deploys.io"
-			></widgetbot>
-			<script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
-		</center>
-	</div>
-	<button id="myBtn" style="width: 100%;"><h2>Join</h2></button>
-			<div id="myModal" class="modal">
-				<div class="modal-content">
-					<span class="close">&times;</span>
-					<center><h2>OOPS</h2></center>
-					<p>
-						We Apologize but our Account System is still under construction.
-					</p>
-				</div>
-			</div>
-			<script src="./Scripts/Functions.js"></script>
-
-
-
-			<script>
-					var livechat = document.getElementsByClassName("livechat");
-					var i;
-					for (i = 0; i < acc.length; i++) {
-						livechat[i].addEventListener("click", function() {
-							this.classList.toggle("A");
-							var panel = this.nextElementSibling;
-							if (panel.style.maxHeight > "0px") {
-								panel.style.maxHeight = "0px";
-							} else {
-								panel.style.maxHeight = panel.scrollHeight + "px";
-							}
-						});
-					}
-				</script>
-			</div>
-		
-		<script>
-			function changeCSS(cssFile, cssLinkIndex) {
-				var oldlink = document
-					.getElementsByTagName("link")
-					.item(cssLinkIndex);
-
-				var newlink = document.createElement("link");
-				newlink.setAttribute("rel", "stylesheet");
-				newlink.setAttribute("type", "text/css");
-				newlink.setAttribute("href", cssFile);
-
-				document
-					.getElementsByTagName("head")
-					.item(0)
-					.replaceChild(newlink, oldlink);
-			}
-
-			window.onscroll = function() {
-				myFunction();
-			};
-			var navbar = document.getElementById("navbar");
-			var sticky = navbar.offsetTop;
-
-			function openNav() {
-				document.getElementById("mySidenav").style.width = "250px";
-				document.getElementById("main").style.marginLeft = "250px";
-				document.body.style.backgroundColor = "rgb(0,0,0,0.4)";
-			}
-
-			function closeNav() {
-				document.getElementById("mySidenav").style.width = "0";
-				document.getElementById("main").style.marginLeft = "0";
-				document.body.style.backgroundColor = "white";
-			}
-
-			function myFunction() {
-				if (window.pageYOffset >= sticky) {
-					navbar.classList.add("sticky");
-				} else {
-					navbar.classList.remove("sticky");
-				}
-			}
-		</script>
-
-		<!--<h1 style="color:aqua;" margin-left:15px >My First WebPage</h1>-->
-
-		<div style="color:aqua;" id="footer">
-			<center>
-				&copy; TrueBlueMan(Diante Littles) 2019. All rights reserved.
-			</center>
-		</div>
-	</body>
-</html>
+			>
+			<a href="#"><img src="./ImageDir/TBH_icon.png" width="32vw">TrueBlueHub</img></a>
+		<button
+		href="#"
+		class="link"
+		onclick="openCommunity()"
+		>
+		<i class="fa fa-user"></i> Community</button
+		>		
+		<button
+				href="#"
+				class="link"
+				onclick="openServices()"
+			>
+			<i class="fa fa-tasks"></i> Services</button
+			>	
+			<button
+				href="#"
+				class="link"
+				onclick="openPage('Products' , this, 'rgb(0,132,225,0.4)')"
+			>
+			<i class="fa fa-product-hunt"></i> Products</button
+			>
+			<button
+				href="#"
+				class="link"
+				onclick="openPage('Downloads' , this, 'rgb(0,132,225,0.4)')"
+			>
+			<i class="fa fa-download"></i> Downloads</button
+			>
+			<button
+				href="#"
+				class="link"
+				onclick="openDash()"
+			>
+			<i class="fa fa-dashboard"></i> Dashboard</button
+			>-->

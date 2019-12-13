@@ -51,7 +51,7 @@
 }
 
 .Content a img {
-    margin-left: 64px;
+    margin-right: 228px;
     text-align: center;
     align-self: center;
     justify-self: center;
@@ -94,6 +94,7 @@ transition: 1s;
 .Content {
     flex: 75%;
     padding: 20px;
+    background-image: linear-gradient(90deg, #555, #333);
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
